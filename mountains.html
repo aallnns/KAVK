@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mountains</title>
+    <title>Mountains</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; 
+            background-image: url('images/photo_main (2).jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .second-background {
+            position: absolute;
+            top: 100vh;
+            left: 0;
+            width: 100%;
+            height: 100vh; 
+            background-image: url('images/mykyta_smahon_1 1.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color:rgba(232, 232, 232, 0.25); 
+            padding: 10px 0; 
+            color: black;
+            display: flex; 
+            align-items: center;
+            justify-content: space-between; 
+        }
+        header img {
+            width: 40px; 
+            margin-left: 20px;
+        }
+        .buttons-container {
+            flex-grow: 1; 
+            text-align: center;
+        }
+        header button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: none; 
+            color: rgba(24, 24, 24, 1);
+            font-size: 16px;
+            margin: 0 10px; 
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <img src="images/kavk_logo_2.svg" alt="Логотип">
+        <div class="buttons-container">
+            <button id="aboutButton">Про нас</button>
+            <button я>Екскурсії</button>
+            <button id="mountainsButton">Похід у гори</button>
+            <button>Відгуки</button>
+        </div>
+        </header>
+
+    <div class="second-background"></div>
 </body>
 </html>
