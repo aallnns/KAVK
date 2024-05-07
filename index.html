@@ -61,8 +61,23 @@
         <div class="buttons-container">
             <button>Про нас</button>
             <button>Екскурсії</button>
-            <button>Похід у гори</button>
+            <button id="mountainsButton">Похід у гори</button>
             <button>Відгуки</button>
+
+            <script>
+                document.getElementById("mountainsButton").addEventListener("click", function() {
+                    window.location.href = "mountains.html";
+                });
+                document.getElementById("aboutButton").addEventListener("click", function() {
+                    window.location.href = "about.html";
+                });
+                document.getElementById("excursionButton").addEventListener("click", function() {
+                    window.location.href = "excursions.html";
+                });
+                document.getElementById("reviewsButton").addEventListener("click", function() {
+                    window.location.href = "reviews.html";
+                });
+            </script>
         </div>
     </header>
     <div class="second-background"></div>
