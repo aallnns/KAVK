@@ -16,7 +16,7 @@
 
         .content {
             width: 50%;
-            padding-top: 5%;
+            padding-top: 9%;
             text-align: center;
             margin-left: 360px;
         }
@@ -31,10 +31,10 @@
             left: 0;
             width: 100%;
             height: 150vh; 
-            background-color: white; 
+            background-image: url('images/Frame 9.png');
         }
         .bottom-panel {
-            position: fixed;
+            position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
@@ -48,7 +48,7 @@
             top: 1511px;
             width: 100%;
             height: 100px; 
-            background-color: rgba(24, 24, 24, 1); /* Змінив колір панелі на чорний */
+            background-color: rgba(24, 24, 24, 1); 
         }
         header {
             position: fixed;
@@ -82,6 +82,7 @@
             margin: 0 10px; 
             cursor: pointer;
         }
+        
     </style>
 </head>
 <body>
@@ -89,9 +90,9 @@
         <img src="images/Clip path group.png" alt="Логотип">
         <div class="buttons-container">
             <button id="aboutButton">Про нас</button>
-            <button я>Екскурсії</button>
+            <button id="excursionsButton">Екскурсії</button>
             <button id="mountainsButton">Похід у гори</button>
-            <button>Відгуки</button>
+            <button id="reviewsButton">Відгуки</button>
         </header>
         <div class="content">
             <img src="images/Турагенство KAVK.png" alt="Центральне зображення">
@@ -105,7 +106,7 @@
                 document.getElementById("aboutButton").addEventListener("click", function() {
                     window.location.href = "about.html";
                 });
-                document.getElementById("excursionButton").addEventListener("click", function() {
+                document.getElementById("excursionsButton").addEventListener("click", function() {
                     window.location.href = "excursions.html";
                 });
                 document.getElementById("reviewsButton").addEventListener("click", function() {
@@ -118,4 +119,3 @@
     <div class="bottom-panel"></div>
 </body>
 </html>
-
