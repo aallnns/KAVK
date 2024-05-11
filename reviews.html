@@ -86,19 +86,15 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
         }
-        .nav-button.active {
-            position: relative; 
+
+        .nav-button {
+            font-weight: 500;
         }
-        .nav-button.active::after {
-    content: '';
-    position: absolute; 
-    bottom: -0.1px; 
-    left: 10%; 
-    width: 80%; 
-    height: 4px;
-    background-color: rgba(79, 149, 72, 1); 
-    z-index: -1;
-}
+
+        .nav-button.active {
+            font-weight: bold; 
+            border-bottom: 4px solid rgba(79, 149, 72, 1); 
+        }
         
     </style>
 </head>
