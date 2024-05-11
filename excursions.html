@@ -71,36 +71,54 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
         }
+        .nav-button.active {
+            position: relative; 
+        }
+        .nav-button.active::after {
+    content: '';
+    position: absolute; 
+    bottom: -0.1px; 
+    left: 10%; 
+    width: 80%; 
+    height: 4px;
+    background-color: rgba(79, 149, 72, 1); 
+    z-index: -1;
+}
     </style>
 </head>
 <body>
     <header>
         <img src="images/Clip path group.png" alt="Логотип">
         <div class="buttons-container">
-            <button id="aboutButton">Про нас</button>
-            <button id="excursionButton">Екскурсії</button>
-            <button id="mountainsButton">Похід у гори</button>
-            <button id="reviewsButton">Відгуки</button>
+            <button id="aboutButton" class="nav-button" data-page="about">Про нас</button>
+            <button id="excursionsButton" class="nav-button" data-page="excursions">Екскурсії</button>
+            <button id="mountainsButton" class="nav-button" data-page="mountains">Похід у гори</button>
+            <button id="reviewsButton" class="nav-button" data-page="reviews">Відгуки</button>
+
         </div>
     </header>
     <div class="content">
         <img src="images/Наші тури.png" alt="Центральне зображення">
     </div>
     <script>
-        document.getElementById("mountainsButton").addEventListener("click", function() {
-            window.location.href = "mountains.html";
-        });
-        document.getElementById("aboutButton").addEventListener("click", function() {
-            window.location.href = "about.html";
-        });
-        document.getElementById("excursionButton").addEventListener("click", function() {
-            window.location.href = "excursions.html";
-        });
-        document.getElementById("reviewsButton").addEventListener("click", function() {
-            window.location.href = "reviews.html";
-        });
+        const buttons = document.querySelectorAll('.nav-button');
+        function navigateToPage(event) {
+            const page = event.target.getAttribute('data-page'); 
+            window.location.href = `${page}.html`;
+        }
+        buttons.forEach(button => button.addEventListener('click', navigateToPage));
+        function setActiveButton() {
+            const currentPageUrl = window.location.href; 
+            buttons.forEach(button => {
+                const buttonPageUrl = button.getAttribute('data-page') + '.html';
+                if (currentPageUrl.includes(buttonPageUrl)) {
+                    button.classList.add('active'); 
+                }
+            });
+        }
+        // Викликаємо функцію при завантаженні сторінки
+        window.addEventListener('load', setActiveButton);
     </script>
     <div class="second-background"></div>
-    <div class="footer">Footer content</div>
 </body>
 </html>
