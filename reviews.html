@@ -5,98 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KAVK Travel</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('images/photo_main (1).jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;
-
-        .content {
-            width: 50%;
-            padding-top: 9%;
-            text-align: center;
-            margin-left: 360px;
-        }
-        .content img {
-            width: 350px;
-            margin-bottom: 20px;
-        }
-        }
-        .second-background {
-            position: absolute;
-            top: 100vh;
-            left: 0;
-            width: 100%;
-            height: 150vh; 
-            background-image: url('images/Frame 9.png');
-        }
-        .bottom-panel {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100px; 
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-        .bottom-panel {
-            position: absolute;
-            bottom: 5;
-            top: 1511px;
-            width: 100%;
-            height: 100px; 
-            background-color: rgba(24, 24, 24, 1); 
-        }
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(232, 232, 232, 0.25);; 
-            padding: 10px 0; 
-            color: black;
-            display: flex; 
-            align-items: center;
-            justify-content: space-between; 
-            z-index: 1;
-        }
-        header img {
-            width: 52px; 
-            margin-left: 20px;
-        }
-        .buttons-container {
-            flex-grow: 1; 
-            text-align: center;
-        }
-        header button {
-            padding: 10px 20px;
-            background-color: transparent;
-            border: none; 
-            color: rgba(24, 24, 24, 1);
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 500;
-            font-size: 24px;
-            margin: 0 10px; 
-            cursor: pointer;
-        }
-        header button:hover {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 600;
-        }
-
-        .nav-button {
-            font-weight: 500;
-        }
-
-        .nav-button.active {
-            font-weight: bold; 
-            border-bottom: 4px solid rgba(79, 149, 72, 1); 
-        }
-        
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -106,15 +17,22 @@
             <button id="excursionsButton" class="nav-button" data-page="excursions">Екскурсії</button>
             <button id="mountainsButton" class="nav-button" data-page="mountains">Похід у гори</button>
             <button id="reviewsButton" class="nav-button" data-page="reviews">Відгуки</button>
-
-        </header>
-        <div class="content">
-            <img src="images/Турагенство KAVK.png" alt="Центральне зображення">
-
         </div>
-
-            <script>
-                const buttons = document.querySelectorAll('.nav-button');
+    </header>
+    <div class="full-page">
+        <img src="images/Property 1=Variant3.jpg">
+        <div class="bottom-panel">
+        <div class="bottom-left">
+            <p>Усі права застережено. <br> Публікація матеріалів <br>розміщених на сайті <br> допускається лише за<br> погодженням.</p>
+    </div>
+    <div class="bottom-right">
+        <p>По питанням екскурсії, <br> співпраці та нашої роботи <br>
+            kavktravel@gmail.com <br>
+            + 38 (099) 089 53 18 <br>
+            + 38 (093) 042 67 36</p>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll('.nav-button');
         function navigateToPage(event) {
             const page = event.target.getAttribute('data-page'); 
             window.location.href = `${page}.html`;
@@ -131,10 +49,7 @@
         }
         // Викликаємо функцію при завантаженні сторінки
         window.addEventListener('load', setActiveButton);
-            </script>
-        </div>
-    </header>
-    <div class="second-background"></div>
-    <div class="bottom-panel"></div>
+    </script>
 </body>
 </html>
+
