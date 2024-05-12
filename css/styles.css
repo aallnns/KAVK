@@ -1,3 +1,8 @@
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
 header {
     position: fixed;
     top: 0;
@@ -62,6 +67,7 @@ header button:hover {
     font-size: 15px;
     margin-top: 1520px; 
 }
+
 .bottom-left {
      text-align: left;
      padding-left: 30px;
@@ -81,16 +87,28 @@ header button:hover {
      margin: 0;
 }   
 
-.full-page {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* Стилі для сторінки mountains.html */
+.mountains-page .bottom-panel {
+    margin-top: 0;
 }
+
+.full-page {
+    position: relative; 
+}
+.excursions-page .bottom-panel {
+    margin-top: 0;
+}
+
+.excursions-page .full-page {
+    position: relative;
+}
+
 
 .full-page img {
     width: 100%;
     height: auto;
-    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none; 
 }
