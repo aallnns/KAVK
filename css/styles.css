@@ -49,7 +49,6 @@ header button:hover {
     border-bottom: 4px solid rgba(79, 149, 72, 1); 
 }
 
-/* Стилі для нижньої панелі */
 .bottom-panel {
     position: relative;
     width: 100%;
@@ -60,7 +59,7 @@ header button:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    margin-top: 1520px; 
+    margin-top: 1110px; 
 }
 .bottom-left {
      text-align: left;
@@ -94,3 +93,85 @@ header button:hover {
     height: auto;
     position: relative;
 }
+
+@font-face {
+    font-family: 'NAMU-1400';
+    src: url('fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #181818;
+    font-family: 'NAMU-1400', sans-serif;
+    z-index: 1;
+}
+
+.text h2 {
+    margin-top: -13px; /* Зменшено відстань від заголовка до першого абзацу */
+    margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
+    font-size: 57px;
+}
+
+.text p:first-child {
+    font-size: 20px;
+}
+
+.text p:last-child {
+    margin-top: 11px; 
+    font-size: 22px;
+}
+
+.text1 {
+/* Ми команда професіоналів, що тривалий час працюють у сфері туризму. Наше туристичне агентство по Карпатах в Україні пропонує широкий спектр послуг, які допоможуть вам спланувати та організувати ідеальну подорож: */
+
+position: absolute;
+width: 55%;
+left: 50%;
+top: 138%;
+transform: translateX(-50%);
+font-family: 'NAMU', sans-serif;
+font-size: 14px;
+text-align: center;
+color: #181818;
+z-index: 1;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text2, .text3, .text4 {
+    position: absolute;
+    width: 300px; 
+    top: 199%;
+    font-family: 'NAMU';
+    font-size: 21px;
+    text-align: center;
+    color: #181818;
+    z-index: 1;
+}
+
+.text2 {
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.text3 {
+    top: 209%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text4 {
+    top: 206%;
+    right: 15%;
+    transform: translate(50%, -50%);
+}
+
+
+
+
