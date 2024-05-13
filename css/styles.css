@@ -114,8 +114,8 @@ header button:hover {
 
 @font-face {
     font-family: 'NAMU-1400';
-    src: url('fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
-         url('fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
+    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
     font-weight: normal;
     font-style: normal;
 }
