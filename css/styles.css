@@ -57,14 +57,13 @@ header button:hover {
 .bottom-panel {
     position: relative;
     width: 100%;
-    height: auto;
     background-color: rgba(24, 24, 24, 1);
     padding: 10px 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    margin-top: 1110px; 
+    margin-top: 1190px; 
 }
 
 .bottom-left {
@@ -154,7 +153,7 @@ width: 55%;
 left: 50%;
 top: 138%;
 transform: translateX(-50%);
-font-family: 'NAMU', sans-serif;
+font-family: 'NAMU-1400', sans-serif;
 font-size: 14px;
 text-align: center;
 color: #181818;
@@ -164,9 +163,9 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .text2, .text3, .text4 {
     position: absolute;
-    width: 300px; 
+    width: 399px; 
+    font-family: 'Montserrat', sans-serif;;
     top: 199%;
-    font-family: 'NAMU';
     font-size: 21px;
     text-align: center;
     color: #181818;
@@ -179,17 +178,58 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .text3 {
-    top: 209%;
+    top: 206%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .text4 {
-    top: 206%;
+    top: 204%;
     right: 15%;
     transform: translate(50%, -50%);
 }
 
+.text5 {
+    position: absolute;
+    width: 366px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    right: 37%;
+    font-size: 28px;
+    top: 241%;
+}
+
+.text6 {
+    position: absolute;
+    width: 386px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    left: 5%;
+    font-size: 28px;
+    top: 256%;
+}
+
+.text7 {
+    position: absolute;
+    width: 386px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    right: 5%;
+    font-size: 28px;
+    top: 256%;
+}
+
+.text8 {
+    position: absolute;
+    width: 366px; 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    right: 37%;
+    font-size: 28px;
+    top: 271%;
+}
 
 
-
+.text2 p, .text3 p, .text4 p, .text5 p, .text6 p, .text7 p, .text8 p {
+    margin: 0; /* Задає нульові відступи */
+}
