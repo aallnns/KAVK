@@ -89,6 +89,31 @@ header button:hover {
 .mountains-page .bottom-panel {
     margin-top: 0;
 }
+.mountains-page .text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #181818;
+    font-family: 'NAMU-1400', sans-serif;
+    z-index: 1;
+}
+
+.mountains-page .text h2 {
+    margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
+    margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
+    font-size: 63px;
+}
+
+.mountains-page .text p:first-child {
+    font-size: 22 px;
+}
+
+.mountains-page .text p:last-child {
+    margin-top: 11px; 
+    font-size: 26px;
+}
 
 .full-page {
     position: relative; 
@@ -288,3 +313,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 26px;
 }
 
+
+
+  
+
+    
