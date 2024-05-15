@@ -103,7 +103,7 @@ header button:hover {
     position: absolute;
     width: 55%;
     left: 50%;
-    top: 143%;
+    top: 138%;
     transform: translateX(-50%);
     font-family: 'NAMU-1400', sans-serif;
     font-size: 45px;
@@ -382,7 +382,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: relative;
     display: inline-block;
     margin-top: 1000px; 
-    margin-left: 50px; 
+    margin-left: 75px; 
 }
 
 .excursions-page .photomountains3 img {
@@ -391,10 +391,48 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: block; 
     margin: 0 auto; 
     position: relative; 
-    top: 20px; 
-    border-radius: 10px; 
+    top: 80px; 
+    border-radius: 20px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
+}  
+
+.excursions-page .photomountains2 {
+    position: relative;
+    display: inline-block;
+    margin-top: 1000px; 
+    margin-left: -550px;  
 }
+
+.excursions-page .photomountains2 img {
+    max-width: 65%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    position: relative; 
+    top: -940px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
+}  
+
+.excursions-page .photomountains1 {
+    position: relative;
+    display: inline-block;
+    margin-top: 200px; 
+    margin-left: 380px;  
+}
+
+.excursions-page .photomountains1 img {
+    max-width: 65%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    position: relative; 
+    top: 20px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
+} 
+
+  
 
 
   
