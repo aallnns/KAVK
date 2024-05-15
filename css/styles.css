@@ -99,6 +99,23 @@ header button:hover {
     font-family: 'NAMU-1400', sans-serif;
     z-index: 1;
 }
+.textmountains { 
+    position: absolute;
+    width: 55%;
+    left: 50%;
+    top: 138%;
+    transform: translateX(-50%);
+    font-family: 'NAMU-1400', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    z-index: 1;
+    font-weight: normal;
+    
+    }
+    .textmountains p {
+        margin: 0;
+    } стиль
 
 .mountains-page .text h2 {
     margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
