@@ -103,7 +103,7 @@ header button:hover {
     position: absolute;
     width: 55%;
     left: 50%;
-    top: 145%;
+    top: 138%;
     transform: translateX(-50%);
     font-family: 'NAMU-1400', sans-serif;
     font-size: 45px;
@@ -140,23 +140,43 @@ header button:hover {
     top: 0;
     left: 0;
 }
+
 .photomountains3 {
     position: relative;
     display: inline-block;
-    margin-top: 1000px; /* Lower the image */
+    margin-top: 1020px;
     margin-left: 150px; /* Adjust margin as needed */
 }
 
 .photomountains3 img {
-    max-width: 65%; /* Decrease the width of the image */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure proper layout */
-    margin: 0 auto; /* Center the image horizontally */
-    position: relative; /* Ensure proper positioning */
-    top: 20px; /* Adjust the vertical position downwards */
-    border-radius: 10px; /* Round the corners of the image */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
-}  
+    max-width: 65%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.photomountains2 {
+    position: absolute;
+    display: inline-block;
+    top: 1020px; /* Adjust according to the margin-top of photomountains3 */
+    right: -550px; /* Position it to the right of the first photo */
+}
+
+.photomountains2 img {
+    max-width: 65%; /* Increase the width to make the photo larger */
+    height: auto; /* Ensure height adjusts proportionally */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
 .excursions-page .bottom-panel {
     margin-top: 0;
 }
@@ -353,25 +373,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 26px;
 }
 
-.excursions-page .mountainsphoto3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.excursions-page .photomountains3 {
-    position: relative;
-    display: inline-block;
-    margin-top: 1000px; 
-    margin-left: 50px; 
-}
 
-.excursions-page .photomountains3 img {
-    max-width: 65%; 
-    height: auto; 
-    display: block; 
-    margin: 0 auto; 
-    position: relative; 
-    top: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
-}
+
+  
+
