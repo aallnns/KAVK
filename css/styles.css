@@ -63,7 +63,7 @@ header button:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    margin-top: 1190px; 
+    margin-top:  ; 
 }
 
 .bottom-left {
@@ -194,7 +194,6 @@ header button:hover {
     padding: 0;
     border: none; 
 }
- 
 
 @font-face {
     font-family: 'NAMU-1400';
@@ -417,13 +416,12 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .excursions-page .photomountains1 {
     position: relative;
     display: inline-block;
-    margin-top: 200px; 
+    margin-top: 180px; 
     margin-left: 380px;  
 }
 
 .excursions-page .photomountains1 img {
-    max-width: 65%; 
-    height: auto; 
+    max-width: 65%;   
     display: block; 
     margin: 0 auto; 
     position: relative; 
@@ -432,8 +430,4 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
 } 
 
-  
-
-
-  
 
