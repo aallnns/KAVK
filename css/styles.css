@@ -1,6 +1,14 @@
+@font-face {
+    font-family: 'NAMU-1400';
+    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -8,39 +16,40 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(232, 232, 232, 0.08); 
-    padding: 10px 0; 
+    background-color: rgba(232, 232, 232, 0.08);
+    padding: 1% 0;
     color: black;
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     z-index: 1;
 }
 
 header img {
-    width: 52px; 
-    margin-left: 20px;
+    width: 3.85%;
+    margin-left: 3.85%;
 }
 
 .buttons-container {
-    flex-grow: 1; 
+    flex-grow: 1;
     text-align: center;
 }
 
 header button {
-    padding: 10px 20px;
+    padding: 0.77% 1.54%;
+    margin: 0 1.54%;
+    font-size: 2.31vw;
     background-color: transparent;
-    border: none; 
+    border: none;
     color: rgba(24, 24, 24, 1);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 24px;
-    margin: 0 10px; 
     cursor: pointer;
     text-decoration: none;
 }
 
 header button:hover {
+    
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
@@ -51,140 +60,44 @@ header button:hover {
 
 .nav-button.active {
     font-weight: bold; 
-    border-bottom: 4px solid rgba(79, 149, 72, 1); 
+    border-bottom: 0.2em solid rgba(79, 149, 72, 1); 
 }
 
 .bottom-panel {
     position: relative;
     width: 100%;
     background-color: rgba(24, 24, 24, 1);
-    padding: 10px 0;
+    padding: 0.84% 0; /* Замінюємо фіксований відступ у пікселях на відсотки */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 15px;
-    margin-top: 1190px; 
+    font-size: 1.26vw; /* Замінюємо фіксований розмір шрифту на відсотки */
+    margin-top: 92.39%; /* Замінюємо фіксований відступ у пікселях на відсотки */
 }
 
 .bottom-left {
-     text-align: left;
-     padding-left: 30px;
-     margin-top: 30px
+    text-align: left;
+    padding-left: 1.875rem; /* 30px у rem */
+    margin-top: 1.875rem; /* 30px у rem */
 }
 
 .bottom-right {
-     position: absolute;
-     top: 30px; 
-     right: 30px; 
-     font-size: 15px; 
-     text-align: left;
+    position: absolute;
+    top: 1.875rem; /* 30px у rem */
+    right: 1.875rem; /* 30px у rem */
+    text-align: left;
 }
+
+
 
 .bottom-left p, .bottom-right p {
-     color: rgba(232, 232, 232, 0.4);
-     margin: 0;
-}   
-
-                                   /* Стилі для сторінки mountains.html */
-.mountains-page .bottom-panel {
-    margin-top: 0;
-}
-.mountains-page .text {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif;
-    z-index: 1;
-}
-.textmountains { 
-    position: absolute;
-    width: 55%;
-    left: 50%;
-    top: 143%;
-    transform: translateX(-50%);
-    font-family: 'NAMU-1400', sans-serif;
-    font-size: 45px;
-    text-align: center;
-    color: rgba(24, 24, 24, 1);
-    z-index: 1;
-    font-weight: normal;
-    
-    }
-    .textmountains p {
-        margin: 0;
-    } 
-
-.mountains-page .text h2 {
-    margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
-    margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
-    font-size: 63px;
-}
-
-.mountains-page .text p:first-child {
-    font-size: 148%;
-}
-
-.mountains-page .text p:last-child {
-    margin-top: 11px; 
-    font-size: 26px;
+    color: rgba(232, 232, 232, 0.4);
+    margin: 0;
 }
 
 .full-page {
     position: relative; 
 }
-.mountainsphoto3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.photomountains3 {
-    position: relative;
-    display: inline-block;
-    margin-top: 1020px;
-    margin-left: 150px; /* Adjust margin as needed */
-}
-
-.photomountains3 img {
-    max-width: 65%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.photomountains2 {
-    position: absolute;
-    display: inline-block;
-    top: 1020px; /* Adjust according to the margin-top of photomountains3 */
-    right: -550px; /* Position it to the right of the first photo */
-}
-
-.photomountains2 img {
-    max-width: 65%; /* Increase the width to make the photo larger */
-    height: auto; /* Ensure height adjusts proportionally */
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.excursions-page .bottom-panel {
-    margin-top: 0;
-}
-
-.excursions-page .full-page {
-    position: relative;
-}
-
 
 .full-page img {
     width: 100%;
@@ -193,15 +106,6 @@ header button:hover {
     margin: 0;
     padding: 0;
     border: none; 
-}
- 
-
-@font-face {
-    font-family: 'NAMU-1400';
-    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
-         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
-    font-weight: normal;
-    font-style: normal;
 }
                                    /* Стилі для сторінки about.html */
 .about-page .text {
@@ -349,7 +253,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                                   /* Стилі для сторінки excursions.html */
 .excursions-page .text {
     position: absolute;
-    top: 38%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: left;
@@ -376,4 +280,3 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 
   
-
