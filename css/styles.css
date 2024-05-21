@@ -91,8 +91,55 @@ header button:hover {
 
 
 .bottom-left p, .bottom-right p {
-    color: rgba(232, 232, 232, 0.4);
-    margin: 0;
+     color: rgba(232, 232, 232, 0.4);
+     margin: 0;
+}   
+
+                                   /* Стилі для сторінки mountains.html */
+.mountains-page .bottom-panel {
+    margin-top: 0;
+}
+.mountains-page .text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: #181818;
+    font-family: 'NAMU-1400', sans-serif;
+    z-index: 1;
+}
+.textmountains { 
+    position: absolute;
+    width: 55%;
+    left: 50%;
+    top: 143%;
+    transform: translateX(-50%);
+    font-family: 'NAMU-1400', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    z-index: 1;
+    font-weight: normal;
+    
+    }
+    .textmountains p {
+        margin: 0;
+    } 
+
+.mountains-page .text h2 {
+    margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
+    margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
+    font-size: 63px;
+}
+
+.mountains-page .text p:first-child {
+    font-size: 148%;
+}
+
+.mountains-page .text p:last-child {
+    margin-top: 11px; 
+    font-size: 26px;
 }
 
 .full-page {
@@ -106,6 +153,15 @@ header button:hover {
     margin: 0;
     padding: 0;
     border: none; 
+}
+ 
+
+@font-face {
+    font-family: 'NAMU-1400';
+    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
+    font-weight: normal;
+    font-style: normal;
 }
                                    /* Стилі для сторінки about.html */
 .about-page .text {
