@@ -84,7 +84,7 @@ header button:hover {
 .bottom-left p, .bottom-right p {
      color: rgba(232, 232, 232, 0.4);
      margin: 0;
-}      
+}     
 
                                    /* Стилі для сторінки mountains.html */
 .mountains-page .bottom-panel {
@@ -138,46 +138,57 @@ header button:hover {
 }
 
 .mountainsphoto3 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: absolute; /* Залишаємо фото абсолютно в одному місці */
+    top: 0; /* Задаємо верхню границю */
+    left: 0; 
 }
 
+
 .photomountains3 {
-    position: relative;
+    position: static;
     display: inline-block;
-    margin-top: 1020px;
-    margin-left: 150px; /* Adjust margin as needed */
+    margin-top: 84%;
+    margin-left: 15%; /* Adjust margin as needed */
 }
 
 .photomountains3 img {
     max-width: 65%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
+    top: 10%;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .photomountains2 {
-    position: absolute;
+    position: static;
     display: inline-block;
-    top: 1020px; /* Adjust according to the margin-top of photomountains3 */
-    right: -550px; /* Position it to the right of the first photo */
+    margin-top: 1.39%; 
+    margin-left: 51.79%;
 }
 
 .photomountains2 img {
     max-width: 65%; /* Increase the width to make the photo larger */
-    height: auto; /* Ensure height adjusts proportionally */
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
+    top: 10%;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
+
+.photomountains1 {
+    position: relative;
+    display: inline-block;
+    margin-top: 24.39%; 
+    left: 34.20%;  
+}
+
+.photomountains1 img {
+    max-width: 65%; 
+    margin-top: 10%; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
+    z-index: 10;
+} 
+
 
 .excursions-page .bottom-panel {
     margin-top: 0%;
