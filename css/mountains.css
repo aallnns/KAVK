@@ -213,6 +213,8 @@ header button:hover {
     overflow: hidden;
 }
 
+    /* Текст для Говерла*/
+
 .translucent-overlay {
     position: absolute;
     top: 10.9%; /* верхня позиція */
@@ -225,7 +227,114 @@ header button:hover {
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0; 
     z-index: 1; /* розташування над зображенням*/
+}    
+
+.overlay-text {
+    position: absolute;
+    bottom: 1%; /* Регулюйте відстань тексту від нижнього краю фото */
+    top: 13.7%;
+    left: 30%; /* Регулюйте відстань тексту від лівого краю фото */
+    font-family: 'NAMU-1400', sans-serif;
+    font-size:  2.2vw; /* Розмір тексту */
+    color: rgba(232, 232, 232, 1); /* Колір тексту */
+    z-index: 10;
 }
+
+.overlay-textP {
+    position: absolute;
+    top: 47%;
+    left: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-textK {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+
+.overlay-textp {
+    position: absolute;
+    top: 52.8%;
+    left: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-Price {
+    position: absolute;
+    top: 15.5%;
+    left: 9%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-money {
+    position: absolute;
+    top: 19.5%;
+    left: 9%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-last {
+    position: absolute;
+    top: 23.5%;
+    left: 9%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-time {
+    position: absolute;
+    top: 27.5%;
+    left: 9%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-date {
+    position: absolute;
+    top: 31.5%;
+    left: 9%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-daily {
+    position: absolute;
+    top: 36%;
+    left: 9%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+    /* Текс для Піп Іван*/
 
 .translucent-overlay-pip-ivan  {
     position: absolute;
@@ -240,7 +349,115 @@ header button:hover {
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0;
     z-index: 1; 
+}    
+
+.overlay-pip-ivan-text {
+    position: absolute;
+    bottom: 1%; 
+    top: 13.7%;
+    left: 79%;
+    font-family: 'NAMU-1400', sans-serif;
+    font-size:  2.2vw;
+    color: rgba(232, 232, 232, 1); 
+    z-index: 10;
 }
+
+
+.overlay-textP1 {
+    position: absolute;
+    top: 47%;
+    left: 57.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-textK1 {
+    position: absolute;
+    top: 50%;
+    left: 57.5%;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+
+.overlay-textp1 {
+    position: absolute;
+    top: 52.8%;
+    left: 57.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-Price1 {
+    position: absolute;
+    top: 15.5%;
+    left: 57.5%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-money1 {
+    position: absolute;
+    top: 19.5%;
+    left: 57.5%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-last1 {
+    position: absolute;
+    top: 23.5%;
+    left: 57.5%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-time1 {
+    position: absolute;
+    top: 27.5%;
+    left: 57.5%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-date1 {
+    position: absolute;
+    top: 31.5%;
+    left: 57.5%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-daily1 {
+    position: absolute;
+    top: 36%;
+    left: 57.5%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+    /* Текст для Несамовите*/
 
 .translucent-overlay-nesamovite {
     position: absolute;
@@ -255,7 +472,110 @@ header button:hover {
     border-top-right-radius: 0; 
     border-bottom-right-radius: 0;
     z-index: 1;
+}    
+
+.overlay-nesamovite-text {
+    position: absolute;
+    bottom: 1%; 
+    top: 5%;
+    left: 23.5%; 
+    font-family: 'NAMU-1400', sans-serif;
+    font-size:  2.2vw; 
+    color: rgba(232, 232, 232, 1); 
+    z-index: 10;
+}
+
+.overlay-textP2 {
+    position: absolute;
+    top: 42%;
+    left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-textK2 {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
 }
 
 
+.overlay-textp2 {
+    position: absolute;
+    top: 48%;
+    left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-Price2 {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-money2 {
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-last2 {
+    position: absolute;
+    top: 15.5%;
+    left: 3%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-time2 {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-date2 {
+    position: absolute;
+    top: 24.5%;
+    left: 3%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-daily2 {
+    position: absolute;
+    top: 29.5%;
+    left: 3%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
 
