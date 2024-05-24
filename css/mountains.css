@@ -66,12 +66,12 @@ header button:hover {
     position: relative;
     width: 100%;
     background-color: rgba(24, 24, 24, 1);
-    padding: 0.84% 0; /* Замінюємо фіксований відступ у пікселях на відсотки */
+    padding: 0.84% 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.26vw; /* Замінюємо фіксований розмір шрифту на відсотки */
-    margin-top: 92.39%; /* Замінюємо фіксований відступ у пікселях на відсотки */
+    font-size: 1.26vw; 
+    margin-top: 92.39%;
     z-index: 2;
 }
 
@@ -176,7 +176,7 @@ header button:hover {
     justify-content: center;
     margin-top: 72.3%;  
     margin-right: 7%;
-    margin-left: 2%;
+    margin-left: 7%;
     position: relative;
     z-index: 1;
 }
@@ -185,7 +185,7 @@ header button:hover {
     max-width: 38%; 
     margin: 4.5vw; 
     border-radius: 20px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a more pronounced shadow around the image */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
     z-index: 1;
 } 
 
@@ -197,7 +197,7 @@ header button:hover {
     position: relative;
     display: flex;
     margin-top: 2%;
-    margin-left: 32%; /* Adjust margin as needed */
+    margin-left: 32%;
 }
 
 .photomountains3 img {
@@ -205,5 +205,57 @@ header button:hover {
     top: 10%;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    z-index: 10;
+    z-index: 1;
 }
+
+.photomountains1-2 .photomountains3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.translucent-overlay {
+    position: absolute;
+    top: 10.9%; /* верхня позиція */
+    left: 6.7%; /* ліва */
+    width: 15%; /* ширина */
+    height: 70%; /* висота */
+    background-color: rgba(24, 24, 24, 0.2); 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+    z-index: 1; /* розташування над зображенням*/
+}
+
+.translucent-overlay-pip-ivan  {
+    position: absolute;
+    top: 10.9%; 
+    left: 62.8%; 
+    transform: translateX(-50%);
+    width: 15%; 
+    height: 70%;
+    background-color: rgba(24, 24, 24, 0.2);
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+    z-index: 1; 
+}
+
+.translucent-overlay-nesamovite {
+    position: absolute;
+    top: 0.1%; 
+    left: 10%;
+    transform: translateX(-50%);
+    width: 20%; 
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.2);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+    z-index: 1;
+}
+
+
+
