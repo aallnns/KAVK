@@ -16,7 +16,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(232, 232, 232, 0.08);
+    background-color: rgba(232, 232, 232, 0);
     padding: 1% 0;
     color: black;
     display: flex;
@@ -117,20 +117,6 @@ header button:hover {
     border: none; 
 }
 
-.text {
-    position: absolute;
-    width: 55%;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3vw;
-    text-align: center;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif;
-    font-weight: normal;
-    z-index: 1;
-}
-
 .textmountains p {
     margin: 0;
 } 
@@ -144,17 +130,39 @@ header button:hover {
     font-size: 2vw;
 }
 
-.text h2 {
-    margin-top: -1.5vw; /* Зменшено відстань від заголовка до першого абзацу */
-    margin-bottom: -0.5vw; /* Зменшено відстань між заголовком і підзаголовком */
-    font-size: 5vw;
+.overlay-text1 {
+    position: absolute;
+    width: 55%;
+    top: -130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    text-align: center;
+    color: #181818;
+    font-family: 'NAMU-1400', sans-serif;
+    font-weight: normal;
+    z-index: 1;
 }
 
-.textmountains { 
+.overlay-text2 { 
     position: absolute;
     width: 55%;
     left: 50%;
-    top: 139%;
+    top: -123%;
+    transform: translateX(-50%);
+    font-family: 'NAMU-1400', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    z-index: 1;
+    font-weight: normal;
+}
+
+.overlay-text3 {
+position: absolute;
+    width: 55%;
+    left: 50%;
+    top: -19%;
     transform: translateX(-50%);
     font-family: 'NAMU-1400', sans-serif;
     font-size: 3.7vw;
@@ -162,8 +170,21 @@ header button:hover {
     color: rgba(24, 24, 24, 1);
     z-index: 1;
     font-weight: normal;
-    
-}
+}  
+
+.overlay-text4 {
+    position: absolute;
+        width: 55%;
+        left: 50%;
+        top: -9%;
+        transform: translateX(-50%);
+        font-family: 'NAMU-1400', sans-serif;
+        font-size: 3.7vw;
+        text-align: center;
+        color: rgba(24, 24, 24, 1);
+        z-index: 1;
+        font-weight: normal;
+    }  
 
 .mountainsphoto3 {
     position: absolute; /* Залишаємо фото абсолютно в одному місці */
@@ -578,4 +599,3 @@ header button:hover {
     color:  rgba(232, 232, 232, 1);
     z-index: 10;
 }
-
