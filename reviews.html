@@ -40,7 +40,7 @@
         const buttons = document.querySelectorAll('.nav-button');
         function navigateToPage(event) {
             const page = event.target.getAttribute('data-page'); 
-            window.location.href = `${page}.html`;
+            window.location.href = ${page}.html;
         }
         buttons.forEach(button => button.addEventListener('click', navigateToPage));
         function setActiveButton() {
