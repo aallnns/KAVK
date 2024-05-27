@@ -120,34 +120,28 @@ header button:hover {
          /* Відгуки */
 .reviews-text-container {
     position: absolute;
-    top: 11%; 
-    left: 35%; 
+    top: 11%; /* Center vertically */
+    left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
     z-index: 1;
+    text-align: center;
 }
 
 .reviews-text1 {
-    position: absolute;
-    width: 55%; 
-    transform: translate(-50%, -50%);
-    font-size: 6vw; 
-    text-align: center;
+    width: 100%;
+    font-size: 6vw;
     color: #181818;
-    font-family: 'NAMU-1400', sans-serif; 
+    font-family: 'NAMU-1400', sans-serif;
     font-weight: normal;
-    z-index: 1;
+    margin: 0; /* Remove default margin */
 }
 
 .reviews-text2 {
-    position: absolute;
     width: 100%;
-    top: calc(10% + 3vw );
-    left:30%; 
-    transform: translateX(-50%);
-    font-size: 2vw;
+    margin-top: 0.1vw; /* Spacing between text1 and text2 */
+    font-size: 2.3vw;
     color: #181818;
     font-family: 'NAMU-1400', sans-serif;
     white-space: nowrap;
-    z-index: 1;
 }
 
