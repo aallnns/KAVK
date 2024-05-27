@@ -1,0 +1,601 @@
+@font-face {
+    font-family: 'NAMU-1400';
+    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(232, 232, 232, 0);
+    padding: 1% 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header img {
+    width: 3.85%;
+    margin-left: 3.85%;
+}
+
+.buttons-container {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+header button {
+    padding: 0.77% 1.54%;
+    margin: 0 1.54%;
+    font-size: 2.31vw;
+    background-color: transparent;
+    border: none;
+    color: rgba(24, 24, 24, 1);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header button:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.nav-button {
+    font-weight: 500;
+}
+
+.nav-button.active {
+    font-weight: bold; 
+    border-bottom: 0.2em solid rgba(79, 149, 72, 1); 
+}
+
+.bottom-panel {
+    position: relative;
+    width: 100%;
+    background-color: rgba(24, 24, 24, 1);
+    padding: 0.84% 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.26vw; 
+    margin-top: 92.39%;
+    z-index: 2;
+}
+
+.bottom-left {
+    text-align: left;
+    padding-left: 1.875rem; /* 30px у rem */
+    margin-top: 1.875rem; /* 30px у rem */
+}
+
+.bottom-right {
+    position: absolute;
+    top: 1.875rem; /* 30px у rem */
+    right: 1.875rem; /* 30px у rem */
+    text-align: left;
+}
+
+.bottom-left p, .bottom-right p {
+     color: rgba(232, 232, 232, 0.4);
+     margin: 0;
+} 
+
+.bottom-panel img {
+    max-width: 100%; /* Максимальна ширина 100% від батьківського контейнера */
+    height: auto; /* Висота автоматична для збереження пропорцій */
+    display: block; /* Встановлення блочного відображення для зображень */
+    margin: 0 auto; /* Центрування зображень */
+}
+
+.bottom-panel {
+    margin-top: 0;
+}
+
+.full-page {
+    position: relative; 
+}
+
+.full-page img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none; 
+}
+
+.textmountains p {
+    margin: 0;
+} 
+
+.text p:first-child {
+    font-size: 4vw;
+}
+
+.text p:last-child {
+    margin-top: 1vw; 
+    font-size: 2vw;
+}
+
+.overlay-text1 {
+    position: absolute;
+    width: 55%;
+    top: -130%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    text-align: center;
+    color: #181818;
+    font-family: 'NAMU-1400', sans-serif;
+    font-weight: normal;
+    z-index: 1;
+}
+
+.overlay-text2 { 
+    position: absolute;
+    width: 55%;
+    left: 50%;
+    top: -123%;
+    transform: translateX(-50%);
+    font-family: 'NAMU-1400', sans-serif;
+    font-size: 2.5vw;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    z-index: 1;
+    font-weight: normal;
+}
+
+.overlay-text3 {
+position: absolute;
+    width: 55%;
+    left: 50%;
+    top: -19%;
+    transform: translateX(-50%);
+    font-family: 'NAMU-1400', sans-serif;
+    font-size: 3.7vw;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    z-index: 1;
+    font-weight: normal;
+}  
+
+.overlay-text4 {
+    position: absolute;
+        width: 55%;
+        left: 50%;
+        top: -9%;
+        transform: translateX(-50%);
+        font-family: 'NAMU-1400', sans-serif;
+        font-size: 3.7vw;
+        text-align: center;
+        color: rgba(24, 24, 24, 1);
+        z-index: 1;
+        font-weight: normal;
+    }  
+
+.mountainsphoto3 {
+    position: absolute; /* Залишаємо фото абсолютно в одному місці */
+    top: 0; /* Задаємо верхню границю */
+    left: 0; 
+}
+
+.photomountains1-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 72.3%;  
+    margin-right: 7%;
+    margin-left: 7%;
+    position: relative;
+    z-index: 1;
+}
+
+.photomountains1-2 img {
+    max-width: 38%; 
+    margin: 4.5vw; 
+    border-radius: 20px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+} 
+
+.photomountains1-2 img:last-child {
+    margin-right: 0;
+}
+
+.photomountains3 { 
+    position: relative;
+    display: flex;
+    margin-top: 2%;
+    margin-left: 32%;
+}
+
+.photomountains3 img {
+    max-width: 52%;
+    top: 10%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.photomountains1-2 .photomountains3 {
+    position: relative;
+    overflow: hidden;
+}
+
+    /* Текст для Говерла*/
+
+.translucent-overlay {
+    position: absolute;
+    top: 10.9%; /* верхня позиція */
+    left: 6.7%; /* ліва */
+    width: 15%; /* ширина */
+    height: 70%; /* висота */
+    background-color: rgba(24, 24, 24, 0.2); 
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0; 
+    z-index: 1; /* розташування над зображенням*/
+}    
+
+.overlay-text {
+    position: absolute;
+    bottom: 1%; /* Регулюйте відстань тексту від нижнього краю фото */
+    top: 13.7%;
+    left: 30%; /* Регулюйте відстань тексту від лівого краю фото */
+    font-family: 'NAMU-1400', sans-serif;
+    font-size:  2.2vw; /* Розмір тексту */
+    color: rgba(232, 232, 232, 1); /* Колір тексту */
+    z-index: 10;
+}
+
+.overlay-textP {
+    position: absolute;
+    top: 47%;
+    left: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-textK {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+
+.overlay-textp {
+    position: absolute;
+    top: 52.8%;
+    left: 9%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-Price {
+    position: absolute;
+    top: 15.5%;
+    left: 9%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-money {
+    position: absolute;
+    top: 19.5%;
+    left: 9%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-last {
+    position: absolute;
+    top: 23.5%;
+    left: 9%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-time {
+    position: absolute;
+    top: 27.5%;
+    left: 9%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-date {
+    position: absolute;
+    top: 31.5%;
+    left: 9%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-daily {
+    position: absolute;
+    top: 36%;
+    left: 9%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+    /* Текс для Піп Іван*/
+
+.translucent-overlay-pip-ivan  {
+    position: absolute;
+    top: 10.9%; 
+    left: 62.8%; 
+    transform: translateX(-50%);
+    width: 15%; 
+    height: 70%;
+    background-color: rgba(24, 24, 24, 0.2);
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+    z-index: 1; 
+}    
+
+.overlay-pip-ivan-text {
+    position: absolute;
+    bottom: 1%; 
+    top: 13.7%;
+    left: 79%;
+    font-family: 'NAMU-1400', sans-serif;
+    font-size:  2.2vw;
+    color: rgba(232, 232, 232, 1); 
+    z-index: 10;
+}
+
+
+.overlay-textP1 {
+    position: absolute;
+    top: 47%;
+    left: 57.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-textK1 {
+    position: absolute;
+    top: 50%;
+    left: 57.5%;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+
+.overlay-textp1 {
+    position: absolute;
+    top: 52.8%;
+    left: 57.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-Price1 {
+    position: absolute;
+    top: 15.5%;
+    left: 57.5%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-money1 {
+    position: absolute;
+    top: 19.5%;
+    left: 57.5%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-last1 {
+    position: absolute;
+    top: 23.5%;
+    left: 57.5%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-time1 {
+    position: absolute;
+    top: 27.5%;
+    left: 57.5%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-date1 {
+    position: absolute;
+    top: 31.5%;
+    left: 57.5%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-daily1 {
+    position: absolute;
+    top: 36%;
+    left: 57.5%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+    /* Текст для Несамовите*/
+
+.translucent-overlay-nesamovite {
+    position: absolute;
+    top: 0.1%; 
+    left: 10%;
+    transform: translateX(-50%);
+    width: 20%; 
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.2);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+    z-index: 1;
+}    
+
+.overlay-nesamovite-text {
+    position: absolute;
+    bottom: 1%; 
+    top: 5%;
+    left: 23.5%; 
+    font-family: 'NAMU-1400', sans-serif;
+    font-size:  2.2vw; 
+    color: rgba(232, 232, 232, 1); 
+    z-index: 10;
+}
+
+.overlay-textP2 {
+    position: absolute;
+    top: 42%;
+    left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-textK2 {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+
+.overlay-textp2 {
+    position: absolute;
+    top: 48%;
+    left: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.1vw;
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-Price2 {
+    position: absolute;
+    top: 6%;
+    left: 3%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-money2 {
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-last2 {
+    position: absolute;
+    top: 15.5%;
+    left: 3%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-time2 {
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-date2 {
+    position: absolute;
+    top: 24.5%;
+    left: 3%;
+    font-size:  1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    color: rgba(232, 232, 232, 1);
+    z-index: 10;
+}
+
+.overlay-daily2 {
+    position: absolute;
+    top: 29.5%;
+    left: 3%;
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(232, 232, 232, 1);
+    z-index: 10;
+}

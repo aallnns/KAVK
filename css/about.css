@@ -1,6 +1,6 @@
 body {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -8,18 +8,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(232, 232, 232, 0.08); 
-    padding: 10px 0; 
+    background-color: rgba(232, 232, 232, 0.08);
+    padding: 1% 0;
     color: black;
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: space-between; 
-    z-index: 1;
+    justify-content: space-between;
+    z-index: 1000;
 }
 
 header img {
-    width: 52px; 
-    margin-left: 20px;
+    width: 4%;
+    margin-left: 2.85%;
 }
 
 .buttons-container {
@@ -28,14 +28,14 @@ header img {
 }
 
 header button {
-    padding: 10px 20px;
+    padding: 0.77% 1.54%;
+    margin: 0 1.54%;
+    font-size: 2.31vw;
     background-color: transparent;
-    border: none; 
+    border: none;
     color: rgba(24, 24, 24, 1);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 24px;
-    margin: 0 10px; 
     cursor: pointer;
     text-decoration: none;
 }
@@ -51,8 +51,9 @@ header button:hover {
 
 .nav-button.active {
     font-weight: bold; 
-    border-bottom: 4px solid rgba(79, 149, 72, 1); 
+    border-bottom: 0.2em solid rgba(79, 149, 72, 1); 
 }
+
 
 .bottom-panel {
     position: relative;
@@ -63,7 +64,7 @@ header button:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 15px;
-    margin-top: 1190px; 
+    margin-top: 90%; 
 }
 
 .bottom-left {
@@ -85,107 +86,6 @@ header button:hover {
      margin: 0;
 }   
 
-                                   /* Стилі для сторінки mountains.html */
-.mountains-page .bottom-panel {
-    margin-top: 0;
-}
-.mountains-page .text {
-    position: absolute;
-    top: 38%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif;
-    z-index: 1;
-}
-.textmountains { 
-    position: absolute;
-    width: 55%;
-    left: 50%;
-    top: 138%;
-    transform: translateX(-50%);
-    font-family: 'NAMU-1400', sans-serif;
-    font-size: 45px;
-    text-align: center;
-    color: rgba(24, 24, 24, 1);
-    z-index: 1;
-    font-weight: normal;
-    
-    }
-    .textmountains p {
-        margin: 0;
-    } 
-
-.mountains-page .text h2 {
-    margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
-    margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
-    font-size: 63px;
-}
-
-.mountains-page .text p:first-child {
-    font-size: 148%;
-}
-
-.mountains-page .text p:last-child {
-    margin-top: 11px; 
-    font-size: 26px;
-}
-
-.full-page {
-    position: relative; 
-}
-.mountainsphoto3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.photomountains3 {
-    position: relative;
-    display: inline-block;
-    margin-top: 1020px;
-    margin-left: 150px; /* Adjust margin as needed */
-}
-
-.photomountains3 img {
-    max-width: 65%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.photomountains2 {
-    position: absolute;
-    display: inline-block;
-    top: 1020px; /* Adjust according to the margin-top of photomountains3 */
-    right: -550px; /* Position it to the right of the first photo */
-}
-
-.photomountains2 img {
-    max-width: 65%; /* Increase the width to make the photo larger */
-    height: auto; /* Ensure height adjusts proportionally */
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.excursions-page .bottom-panel {
-    margin-top: 0;
-}
-
-.excursions-page .full-page {
-    position: relative;
-}
-
-
 .full-page img {
     width: 100%;
     height: auto;
@@ -202,8 +102,8 @@ header button:hover {
     font-weight: normal;
     font-style: normal;
 }
-                                   /* Стилі для сторінки about.html */
-.about-page .text {
+
+.text {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -214,22 +114,22 @@ header button:hover {
     z-index: 1;
 }
 
-.about-page .text h2 {
+.text h2 {
     margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
     margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
     font-size: 71px;
 }
 
-.about-page .text p:first-child {
+.text p:first-child {
     font-size: 130%;
 }
 
-.about-page .text p:last-child {
+.text p:last-child {
     margin-top: 11px; 
     font-size: 26px;
 }
 
-.about-page .text1 {
+ .text1 {
 /* Ми команда професіоналів, що тривалий час працюють у сфері туризму. Наше туристичне агентство по Карпатах в Україні пропонує широкий спектр послуг, які допоможуть вам спланувати та організувати ідеальну подорож: */
 
 position: absolute;
@@ -245,7 +145,7 @@ z-index: 1;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.about-page .text2, .text3, .text4 {
+ .text2, .text3, .text4 {
     position: absolute;
     width: 399px; 
     font-family: 'Montserrat', sans-serif;;
@@ -256,24 +156,24 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
-.about-page .text2 {
+ .text2 {
     left: 16%;
     transform: translate(-50%, -50%);
 }
 
-.about-page .text3 {
+.text3 {
     top: 202%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.about-page .text4 {
+ .text4 {
     top: 200%;
     right: 16%;
     transform: translate(50%, -50%);
 }
 
-.about-page .text5 {
+.text5 {
     position: absolute;
     width: 366px; 
     text-align: center;
@@ -283,7 +183,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 241%;
 }
 
-.about-page .text6 {
+.text6 {
     position: absolute;
     width: 386px; 
     text-align: center;
@@ -293,7 +193,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 256%;
 }
 
-.about-page .text7 {
+ .text7 {
     position: absolute;
     width: 386px; 
     text-align: center;
@@ -303,7 +203,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 256%;
 }
 
-.about-page .text8 {
+ .text8 {
     position: absolute;
     width: 366px; 
     text-align: center;
@@ -313,11 +213,11 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 271%;
 }
 
-.about-page .text2 p, .text3 p, .text4 p, .text5 p, .text6 p, .text7 p, .text8 p {
+.text2 p, .text3 p, .text4 p, .text5 p, .text6 p, .text7 p, .text8 p {
     margin: 0; /* Задає нульові відступи */
 }
 
-.about-page .instagram-button {
+.instagram-button {
     text-align: center;
     position: absolute;
     margin-top: 138%;
@@ -327,52 +227,21 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
-.about-page .instagram-button img {
+.instagram-button img {
     width: 85px; 
     height: 85px;
     display: none;
 }
 
-.about-page .instagram-button .logo1 {
+ .instagram-button .logo1 {
     display: block;
 }
 
-.about-page .instagram-button a:hover .logo1 {
+.instagram-button a:hover .logo1 {
     display: none;
 }
 
-.about-page .instagram-button a:hover .logo2 {
+.instagram-button a:hover .logo2 {
     display: block;
-}
-
-                                  /* Стилі для сторінки excursions.html */
-.excursions-page .text {
-    position: absolute;
-    top: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif;
-    z-index: 1;
-}
-
-.excursions-page .text h2 {
-    margin-top: -21px; /* Зменшено відстань від заголовка до першого абзацу */
-    margin-bottom: -10px; /* Зменшено відстань між заголовком і підзаголовком */
-    font-size: 63px;
-}
-
-.excursions-page .text p:first-child {
-    font-size: 22 px;
-}
-
-.excursions-page .text p:last-child {
-    margin-top: 11px; 
-    font-size: 26px;
-}
-
-
-
-  
-
+    
+}                      
