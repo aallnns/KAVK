@@ -295,3 +295,26 @@ header button:hover {
     text-align: center; /* Вирівнювання тексту по центру */
     z-index: 10; 
 }
+
+.logo-button3, .logo-button2, .logo-button1{
+    position: absolute;
+    bottom: 10%;
+    left: 19%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 20;
+}
+
+.logo-button2 {
+    top: 106%;
+    left: 65.5%; 
+}
+
+.logo-button3 img, .logo-button2 img, .logo-button1 img {
+    width: 10vw;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

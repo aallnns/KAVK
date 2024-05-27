@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'NAMU-1400';
-    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
-         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +8,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(232, 232, 232, 0);
+    background-color: rgba(232, 232, 232, 0.08);
     padding: 1% 0;
     color: black;
     display: flex;
@@ -26,8 +18,8 @@ header {
 }
 
 header img {
-    width: 3.85%;
-    margin-left: 3.85%;
+    width: 4%;
+    margin-left: 2.85%;
 }
 
 .buttons-container {
@@ -66,12 +58,12 @@ header button:hover {
     position: relative;
     width: 100%;
     background-color: rgba(24, 24, 24, 1);
-    padding: 0.84% 0;
+    padding: 0.84% 0; /* Замінюємо фіксований відступ у пікселях на відсотки */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.26vw; 
-    margin-top: 92.39%;
+    font-size: 1.26vw; /* Замінюємо фіксований розмір шрифту на відсотки */
+    margin-top: 92.39%; /* Замінюємо фіксований відступ у пікселях на відсотки */
     z-index: 2;
 }
 
@@ -104,49 +96,16 @@ header button:hover {
     margin-top: 0;
 }
 
-.full-page {
-    position: relative; 
-}
 
-.full-page img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: none; 
-}
-
-         /* Відгуки */
-.reviews-text-container {
-    position: absolute;
-    top: 11%; 
-    left: 35%; 
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
-.reviews-text1 {
-    position: absolute;
-    width: 55%; 
-    transform: translate(-50%, -50%);
-    font-size: 6vw; 
-    text-align: center;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif; 
+@font-face {
+    font-family: 'NAMU-1400';
+    src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('../fonts/NAMU-1400.woff') format('woff');   /* Для старіших браузерів */
     font-weight: normal;
-    z-index: 1;
+    font-style: normal;
 }
 
-.reviews-text2 {
-    position: absolute;
-    width: 100%;
-    top: calc(10% + 3vw );
-    left:30%; 
-    transform: translateX(-50%);
-    font-size: 2vw;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif;
-    white-space: nowrap;
-    z-index: 1;
+.bottom-panel {
+    margin-top: 0%;
 }
+ 
