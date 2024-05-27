@@ -117,19 +117,6 @@ header button:hover {
     border: none; 
 }
 
-.textmountains p {
-    margin: 0;
-} 
-
-.text p:first-child {
-    font-size: 4vw;
-}
-
-.text p:last-child {
-    margin-top: 1vw; 
-    font-size: 2vw;
-}
-
 .overlay-text1 {
     position: absolute;
     width: 55%;
@@ -188,17 +175,17 @@ position: absolute;
 
 .mountainsphoto3 {
     position: absolute; /* Залишаємо фото абсолютно в одному місці */
-    top: 0; /* Задаємо верхню границю */
+    top: 0; 
     left: 0; 
 }
 
 .photomountains1-2 {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 72.3%;  
     margin-right: 7%;
     margin-left: 7%;
-    position: relative;
     z-index: 1;
 }
 
@@ -217,7 +204,7 @@ position: absolute;
 .photomountains3 { 
     position: relative;
     display: flex;
-    margin-top: 2%;
+    margin-top: 3.3%;
     margin-left: 32%;
 }
 
