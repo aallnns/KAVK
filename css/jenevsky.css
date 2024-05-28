@@ -96,6 +96,32 @@ header button:hover {
     margin-top: 0;
 }
 
+.full-page {
+    position: relative; 
+}
+
+.full-page img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none; 
+}
+
+.text {
+    position: absolute;
+    top: 16vw;
+    margin-left: 77%;
+    transform: translate(-50%, -50%);
+    font-size: 4.8vw;
+    text-align: left;
+    color:rgba(232, 232, 232, 1);
+    font-family: 'NAMU-1400', sans-serif;
+    font-weight: normal;
+    z-index: 1;
+}
+
 
 @font-face {
     font-family: 'NAMU-1400';
@@ -105,7 +131,100 @@ header button:hover {
     font-style: normal;
 }
 
+
+@font-face {
+    font-family: 'NAMU-1990';
+    src: url('../fonts/NAMU-1990.woff2') format('woff2'), /* Для сучасних браузерів */
+         url('../fonts/NAMU-1990.woff') format('woff');   /* Для старіших браузерів */
+    font-weight: normal;
+    font-style: normal;
+}
+
 .bottom-panel {
     margin-top: 0%;
 }
- 
+
+ .full-page img{
+    position: relative;
+}
+
+.black {
+    width: 27%; /* розмір квадрата */
+    height: 21vw; /* розмір квадрата */
+    background-color: rgba(24, 24, 24, 0.5); /* початковий колір, який ви можете змінити */
+    border-radius: 6%; /* радіус закруглення, змініть значення за потреби */
+    position: absolute; /* позиціювання на сторінці */
+    top: 33vw; /* центрування по вертикалі */
+    left: 23%; /* центрування по горизонталі */
+    transform: translate(-50%, -50%); /* щоб центрування було по середині квадрата */
+    z-index: 1000; /* щоб квадрат був над іншими елементами */
+}
+
+.black-text {
+    font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+    width: 22vw;
+    line-height: 2.1;
+    font-size: 1.6vw;
+    color: rgba(255, 255, 255, 1); /* колір тексту наслідує від батьківського елемента */
+    margin: 0;
+    position: relative;
+    top: 11%; 
+    left: 11%; 
+}
+
+.nav-button1 {
+    position: absolute;
+    top: 44vw;
+    right: 9%;
+    padding: 0;
+    z-index: 10;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+.nav-button1 img {
+    width: 19vw;
+    height: auto;
+}
+
+.text1 {
+position: absolute;
+font-size: 2vw;
+width: 79vw;
+left: 50%;
+top: 57vw;
+transform: translateX(-50%);
+font-family: 'NAMU-1990', sans-serif;
+text-align: center;
+color: rgba(24, 24, 24, 1);
+z-index: 1;
+}
+
+.text1 p {
+    margin-bottom: 3vw; /* Відступ між параграфами */
+}
+
+.text2 {
+position: absolute;
+font-size: 1.7vw;
+left: 38%;
+top: 96vw;
+transform: translateX(-50%);
+font-family: 'NAMU-1990', sans-serif;
+text-align: left;
+color: rgba(24, 24, 24, 1);
+z-index: 1;
+}
+
+.text2 p {
+    margin-bottom: 0.2vw;
+}
+
+.text2 h2 {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+

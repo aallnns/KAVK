@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/jenevsky.css">
 </head>
-<body>
     <header>
         <img src="images/Clip path group.png" alt="Логотип">
         <div class="buttons-container">
@@ -16,41 +15,86 @@
             <button id="excursionsButton" class="nav-button" data-page="excursions">Екскурсії</button>
             <button id="mountainsButton" class="nav-button" data-page="mountains">Похід у гори</button>
             <button id="reviewsButton" class="nav-button" data-page="reviews">Відгуки</button>
-        </div>
+           
+        </div>    
     </header>
 
-    <div class="bottom-panel">
-        <div class="bottom-left">
-            <p>Усі права застережено. <br> Публікація матеріалів <br>розміщених на сайті <br> допускається лише за<br> погодженням.</p>
-        </div>
-        <div class="bottom-right">
-            <p>По питанням екскурсії, <br> співпраці та нашої роботи <br>
-            kavktravel@gmail.com <br>
-            + 38 (099) 089 53 18 <br>
-            + 38 (093) 042 67 36</p>
+    <div class="full-page">
+        <img src="images/jenevsky_guk_1 2 (2).png">
+        <img src="images/mykyta_smahon_1 1 (1).jpg">
+    </div> 
+    
+    <button id="bookButton" class="nav-button1">
+                <img src="images/Group 7.png" alt="Логотип для бронювання">
+            </button>
+            
+    <div class="text">
+        <p>ЖЕНЕЦЬКИЙ ГУК</p>
+    </div> 
+
+    <div class="black">
+        <p class="black-text">Тип: Автобусна поїздка<br>Дати: Щоденно<br>Тривалість: 09:00-16:00<br>Протяжність: 75 км<br>Ціна: 900 грн</p>
+    </div>
+
+    <div class="text1">
+        <p>Це наймолодший водограй в Українських Карпатах, що виник між масивами хребтів гір Хом’як-Синяк та Явірник неподалік сіл Микуличин і Татарів Яремчанської міської ради Івано-Франківської області.</p>
+        <p>Водоспад з’явився у цій місцевості від банальної повені на річці Женець, яка тече вздовж Женецької ущелини. Проте потоки його води настільки сильні, що люди прозвали водограй «гучним» – Гуком. Не зважаючи на умови утворення, Женецький Гук розташований на висоті 900 м над рівнем моря та сягає висоти 15 метрів. Водограй є цікавим природнім утворенням Карпатського національного заповідника і часто слугує відправним пунктом на підйоми вершин гір пасма Горган.</p>
+    </div>
+
+    <div class="text2">
+        <h2>Місце зустрічі:</h2>
+        <p>З м. Яремче, с. Микуличин, с. Татарів, с. Яблуниця, с. Поляниця, смт. Ворохта</p>
+    
+        <h2>Харчування:</h2>
+        <p>Є можливість замовити обід в колибі</p>
+    
+        <h2>Ціна:</h2>
+        <p>900 грн</p>
+    
+        <h2>Знижки:</h2>
+        <p>10% знижка: студентам, пенсіонерам, учасникам АТО;<br>
+        50% знижка: дітям до 14 років;<br>
+        діти до 6 років – безкоштовно без надання окремого місця.</p>
+    
+        <h2>У вартість включено:</h2>
+        <p>– транспортно-екскурсійний супровід</p>
+    
+        <h2>У вартість не включено:</h2>
+        <p>– вхідні квітки до музеїв</p>
+    </div>
+    
+
+        <div class="bottom-panel">
+            <div class="bottom-left">
+                <p>Усі права застережено. <br> Публікація матеріалів <br>розміщених на сайті <br> допускається лише за<br> погодженням.</p>
+            </div>
+            <div class="bottom-right">
+                <p>По питанням екскурсії, <br> співпраці та нашої роботи <br>
+                kavktravel@gmail.com <br>
+                + 38 (099) 089 53 18 <br>
+                + 38 (093) 042 67 36</p>
+            </div>
         </div>
     </div>
 
     <script>
         const buttons = document.querySelectorAll('.nav-button');
-
         function navigateToPage(event) {
-            const page = event.target.getAttribute('data-page');
+            const page = event.target.getAttribute('data-page'); 
             window.location.href = `${page}.html`;
         }
-
         buttons.forEach(button => button.addEventListener('click', navigateToPage));
-
         function setActiveButton() {
-            const currentPageUrl = window.location.href;
+            const currentPageUrl = window.location.href; 
             buttons.forEach(button => {
                 const buttonPageUrl = button.getAttribute('data-page') + '.html';
                 if (currentPageUrl.includes(buttonPageUrl)) {
-                    button.classList.add('active');
+                    button.classList.add('active'); 
                 }
             });
         }
 
+        // Викликаємо функцію при завантаженні сторінки
         window.addEventListener('load', setActiveButton);
     </script>
 </body>
