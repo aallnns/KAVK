@@ -586,3 +586,29 @@ position: absolute;
     color:  rgba(232, 232, 232, 1);
     z-index: 10;
 }
+
+
+.logo-button3, .logo-button2, .logo-button1{
+    position: absolute;
+    bottom: 10%;
+    left: 17.5%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 20;
+}
+
+.logo-button2 {
+    top: -164%;
+    left: 49%; 
+    width: 18vw;
+}
+
+.logo-button3 img, .logo-button2 img, .logo-button1 img {
+    width: 20vw;
+    height: auto;
+    border-radius: 0; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
