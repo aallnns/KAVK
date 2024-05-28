@@ -192,10 +192,10 @@ header button:hover {
 
 .text1 {
 position: absolute;
-font-size: 2vw;
+font-size: 1.9vw;
 width: 79vw;
 left: 50%;
-top: 57vw;
+top: 56vw;
 transform: translateX(-50%);
 font-family: 'NAMU-1990', sans-serif;
 text-align: center;
@@ -211,7 +211,7 @@ z-index: 1;
 position: absolute;
 font-size: 1.7vw;
 left: 38%;
-top: 96vw;
+top: 102vw;
 transform: translateX(-50%);
 font-family: 'NAMU-1990', sans-serif;
 text-align: left;
@@ -228,3 +228,13 @@ z-index: 1;
     font-weight: bold;
 }
 
+.photo img {   
+    position: absolute;
+    left: 11%;
+    top: 89vw;
+    z-index: 1; 
+    width: 77vw;
+    height: auto; /* Автоматично регулюємо висоту, щоб зберегти пропорції */
+    display: block; /* Додаємо як блочний елемент, щоб уникнути непотрібних відступів */
+    margin: 0 auto; /
+}
