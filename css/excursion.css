@@ -319,3 +319,17 @@ header button:hover {
     height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+.logo-button3 img:last-child {
+    display: none; /* Забезпечуємо, що друге зображення буде приховане за замовчуванням */
+    border-radius: 10%; 
+}
+
+.logo-button3:hover img:first-child {
+    display: none; /* При наведенні курсора на кнопку перше зображення приховуємо */
+}
+
+.logo-button3:hover img:last-child {
+    display: block; /* При наведенні курсора на кнопку друге зображення стає видимим */
+}
+
