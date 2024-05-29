@@ -209,9 +209,9 @@ z-index: 1;
 
 .text2 {
 position: absolute;
-font-size: 1.7vw;
+font-size: 1.4vw;
 left: 38%;
-top: 102vw;
+top: 99vw;
 transform: translateX(-50%);
 font-family: 'NAMU-1990', sans-serif;
 text-align: left;
@@ -220,11 +220,10 @@ z-index: 1;
 }
 
 .text2 p {
-    margin-bottom: 0.2vw;
+    margin-bottom: 0.9vw;
 }
 
 .text2 h2 {
-    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -238,3 +237,6 @@ z-index: 1;
     display: block; /* Додаємо як блочний елемент, щоб уникнути непотрібних відступів */
     margin: 0 auto; /
 }
+
+
+

@@ -81,9 +81,9 @@ header button:hover {
 }
 
 .bottom-left p, .bottom-right p {
-     color: rgba(232, 232, 232, 0.4);
-     margin: 0;
-} 
+    color: rgba(232, 232, 232, 0.4);
+    margin: 0;
+}
 
 .bottom-panel img {
     max-width: 100%; /* Максимальна ширина 100% від батьківського контейнера */
@@ -100,6 +100,7 @@ header button:hover {
     position: relative; 
 }
 
+
 .full-page img {
     width: 100%;
     height: auto;
@@ -107,7 +108,7 @@ header button:hover {
     margin: 0;
     padding: 0;
     border: none; 
-}
+} 
 
 .text {
     position: absolute;
