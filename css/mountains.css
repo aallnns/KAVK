@@ -161,16 +161,16 @@ position: absolute;
 
 .overlay-text4 {
     position: absolute;
-        width: 55%;
-        left: 50%;
-        top: -9%;
-        transform: translateX(-50%);
-        font-family: 'NAMU-1400', sans-serif;
-        font-size: 3.7vw;
-        text-align: center;
-        color: rgba(24, 24, 24, 1);
-        z-index: 1;
-        font-weight: normal;
+    width: 55%;
+    left: 50%;
+    top: -9%;
+    transform: translateX(-50%);
+    font-family: 'NAMU-1400', sans-serif;
+    font-size: 3.7vw;
+    text-align: center;
+    color: rgba(24, 24, 24, 1);
+    z-index: 1;
+    font-weight: normal;
     }  
 
 .mountainsphoto3 {

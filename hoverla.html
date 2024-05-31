@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hoverla.css">
+</head>
+    <header>
+        <img src="images/Clip path group.png" alt="Логотип">
+        <div class="buttons-container">
+            <button id="aboutButton" class="nav-button" data-page="about">Про нас</button>
+            <button id="excursionsButton" class="nav-button" data-page="excursions">Екскурсії</button>
+            <button id="mountainsButton" class="nav-button" data-page="mountains">Похід у гори</button>
+            <button id="reviewsButton" class="nav-button" data-page="reviews">Відгуки</button>
+        </div>
+    </header>
+        <div class="full-page">
+            <img src="images/hoverla_1 1.png">
+            <div class="translucent-overlay"></div>
+            <div class="overlay-text1">Тип:Піший</div>
+            <div class="overlay-text2">Дати:Щоденно</div>
+            <div class="overlay-text3">Тривалість:10:00-18:00</div>
+            <div class="overlay-text4">Протяжність:20 км</div>
+            <div class="overlay-text5">Ціна:1200 грн</div>
+            <img src="images/mykyta_smahon_1 1 (1).jpg">
+        </div> 
+        <button id="bookButton" class="nav-button1">
+            <img src="images/Group 7.png" alt="Логотип для бронювання">
+        </button>
+        <div class="photo">
+            <img src="images/goverla_1.png" alt="Опис зображення 1">
+        </div>
+        <div class="text1">ГОРА ГОВЕРЛА</div>
+        <div class="text2">Найвища вершина Українських Карпат і найвища точка України, її висота становить 2 061 м над рівнем моря. Розташована в гірському масиві Чорногора на межі Надвірнянського району Івано-Франківської області та Рахівського району Закарпатської області, за 17 кілометрів від кордону з Румунією.</div>
+        <div class="text3">Місце зустрічі:</div>
+        <div class="text4">З м. Яремче, с. Микуличин, с.Татарів, с. Яблуниця, с.Поляниця, смт. Ворохта</div>
+        <div class="text5">Харчування:</div>
+        <div class="text6">рекомендовано взяти питну воду та сухпайок (горішки,фрукти, шоколад, чай)</div>
+        <div class="text7">Ціна:</div>
+        <div class="text8">1200 грн:</div>
+        <div class="text9"><span class="bullet">·</span>10% знижка: студентам, пенсіонерам, учасникам АТО;</div>
+        <div class="text10"><span class="bullet">·</span>50% знижка: дітям до 14 років;</div>
+        <div class="text11"><span class="bullet">·</span>діти до 6 років – безкоштовно без надання окремого місця.</div>
+        <div class="text12">У вартість включено:</div>
+        <div class="text13">- екскурсійний суровід;</div>
+        <div class="text14">- підтримка учасників у випадку травмування у поході;</div>
+        <div class="text15">- реєстрація в контрольно-рятувальні службі;</div>
+        <div class="text16">- послуги інструктора гіда;</div>
+        <div class="text17">- консультації перед походом;</div>
+        <div class="text18">У вартість не включено:</div>
+        <div class="text19">- рекреаційний збір;</div>
+    <div class="bottom-panel">
+        <div class="bottom-left">
+            <p>Усі права застережено. <br> Публікація матеріалів <br>розміщених на сайті <br> допускається лише за<br> погодженням.</p>
+        </div>
+        <div class="bottom-right">
+            <p>По питанням екскурсії, <br> співпраці та нашої роботи <br>
+            kavktravel@gmail.com <br>
+            + 38 (099) 089 53 18 <br>
+            + 38 (093) 042 67 36</p>
+        </div>
+    </div>
+</div>
+
+    <script>
+        const buttons = document.querySelectorAll('.nav-button');
+        function navigateToPage(event) {
+            const page = event.target.getAttribute('data-page'); 
+            window.location.href = `${page}.html`;
+        }
+        buttons.forEach(button => button.addEventListener('click', navigateToPage));
+        function setActiveButton() {
+            const currentPageUrl = window.location.href; 
+            buttons.forEach(button => {
+                const buttonPageUrl = button.getAttribute('data-page') + '.html';
+                if (currentPageUrl.includes(buttonPageUrl)) {
+                    button.classList.add('active'); 
+                }
+            });
+        }
+        // Викликаємо функцію при завантаженні сторінки
+        window.addEventListener('load', setActiveButton);
+    </script>
+</body>
+</html>
+
