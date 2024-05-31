@@ -20,9 +20,19 @@
         </div>
     </header>
     <div class="full-page">
-        <img src="images/photo_main (2).jpg">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="images/photo_main (2).jpg" alt="Main Photo">
+            </div>
+            <div class="slide">
+                <img src=" images/Property 1=Variant3.jpg" alt="Second Photo">
+            </div>
+            <div class="slide">
+                <img src="images/photo_main (1).jpg" alt="Third Photo">
+        </div>
         <img src="images/rostyslav-savchyn-4nAh6u7dD1g-unsplash 1.png">
-        <div class ="mountainsphoto3">
+        </div>
+        <div class="mountainsphoto3">
             <div class ="photomountains1-2">
                 <img src ="images/Говерла.jpg" alt="Говерла">
                 <div class="translucent-overlay"></div>
@@ -104,6 +114,20 @@
                 }
             });
         }
+        let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+            slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
         // Викликаємо функцію при завантаженні сторінки
         window.addEventListener('load', setActiveButton);
     </script>
