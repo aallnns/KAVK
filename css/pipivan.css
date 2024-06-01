@@ -8,7 +8,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(232, 232, 232, 0.08);
+    background-color: rgba(232, 232, 232, 0);
     padding: 1% 0;
     color: black;
     display: flex;
@@ -272,10 +272,10 @@ header button:hover {
 
 .text1 {
     position: absolute;
-    top: 12vw;
-    margin-left: 82%;
+    top: 14vw;
+    margin-left: 76%;
     transform: translate(-50%, -50%);
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: left;
     color:rgba(232, 232, 232, 1);
     font-family: 'NAMU-1400', sans-serif;
@@ -284,7 +284,7 @@ header button:hover {
 
 .text2 {
     position: absolute;
-    font-size: 1.8vw;
+    font-size: 2vw;
     width: 79vw;
     left: 50%;
     top: 58vw;

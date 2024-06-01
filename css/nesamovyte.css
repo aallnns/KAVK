@@ -201,7 +201,7 @@ header button:hover {
 .photo img {   
     position: absolute;
     left: 11%;
-    top: 76vw;
+    top: 79vw;
     width: 77vw;
     height: auto; /* Автоматично регулюємо висоту, щоб зберегти пропорції */
     display: block; /* Додаємо як блочний елемент, щоб уникнути непотрібних відступів */
@@ -270,12 +270,63 @@ header button:hover {
     z-index: 10;
 }
 
+
+.overlay-text1 {
+    position: absolute;
+    top: 17%;
+    left: 8%;
+    font-size: 1.9vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
+.overlay-text2 {
+    position: absolute;
+    top: 19%;
+    left: 8%;
+    font-size: 1.9vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
+.overlay-text3 {
+    position: absolute;
+    top: 21%;
+    left: 8%;
+    font-size: 1.9vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
+.overlay-text4 {
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    font-size: 1.9vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
+.overlay-text5 {
+    position: absolute;
+    top: 25%;
+    left: 8%;
+    font-size: 1.9vw;
+    font-family: 'Montserrat', sans-serif;
+    color:  rgba(255, 255, 255, 1);
+    z-index: 10;
+}
+
 .text1 {
     position: absolute;
-    top: 12vw;
-    margin-left: 82%;
+    top: 14vw;
+    margin-left: 76%;
     transform: translate(-50%, -50%);
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: left;
     color:rgba(232, 232, 232, 1);
     font-family: 'NAMU-1400', sans-serif;
@@ -284,10 +335,10 @@ header button:hover {
 
 .text2 {
     position: absolute;
-    font-size: 1.8vw;
+    font-size: 1.9vw;
     width: 79vw;
     left: 50%;
-    top: 58vw;
+    top: 57vw;
     transform: translateX(-50%);
     font-family: 'NAMU-1990', sans-serif;
     text-align: center;

@@ -117,8 +117,6 @@ header button:hover {
     border: none; 
 }
 
-
-
 .overlay-text1 {
     position: absolute;
     width: 55%;
@@ -589,8 +587,7 @@ position: absolute;
     z-index: 10;
 }
 
-
-.logo-button3, .logo-button2, .logo-button1{
+.logo-button3 {
     position: absolute;
     bottom: 10%;
     left: 17.5%;
@@ -599,18 +596,56 @@ position: absolute;
     border: none;
     cursor: pointer;
     padding: 0;
+    border-radius: 20px;
     z-index: 20;
 }
 
-.logo-button2 {
-    top: -164%;
-    left: 49%; 
-    width: 18vw;
+.logo-button3 img {
+    width: 20vw;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    border-radius: 8px;   
 }
 
-.logo-button3 img, .logo-button2 img, .logo-button1 img {
+.logo-button2 {
+    position: absolute;
+    bottom: 10%;
+    left: 49%;
+    top: -164%;
+    width: 18vw;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+
+.logo-button2 img {
     width: 20vw;
     height: auto;
     border-radius: 0; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.logo-button1 {
+    position: absolute;
+    bottom: 10%;
+    left: 17.5%;
+    transform: translateX(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 20px;
+    z-index: 20;
+}
+
+.logo-button1 img {
+    width: 20vw;
+    height: auto;
+    border-radius: 0; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
