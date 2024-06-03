@@ -58,26 +58,29 @@ header button:hover {
     position: relative;
     width: 100%;
     background-color: rgba(24, 24, 24, 1);
-    padding: 0.84% 0; /* Замінюємо фіксований відступ у пікселях на відсотки */
+    padding: 5% 0; 
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 1.26vw; /* Замінюємо фіксований розмір шрифту на відсотки */
-    margin-top: 92.39%; /* Замінюємо фіксований відступ у пікселях на відсотки */
+    font-size: 1vw;
+    margin-top: 15%; 
     z-index: 2;
 }
 
 .bottom-left {
+    position: absolute;
+    bottom: 19%; /* Decrease the bottom value */
+    left: 3%;
     text-align: left;
-    padding-left: 1.875rem; /* 30px у rem */
-    margin-top: 1.875rem; /* 30px у rem */
+    margin-top: -10px; /* Increase the negative margin-top value */
 }
 
 .bottom-right {
     position: absolute;
-    top: 1.875rem; /* 30px у rem */
-    right: 1.875rem; /* 30px у rem */
+    bottom: 19%; /* Decrease the bottom value */
+    right: 3%;
     text-align: left;
+    margin-top: -10px; /* Increase the negative margin-top value */
 }
 
 .bottom-left p, .bottom-right p {
@@ -86,10 +89,10 @@ header button:hover {
 }
 
 .bottom-panel img {
-    max-width: 100%; /* Максимальна ширина 100% від батьківського контейнера */
-    height: auto; /* Висота автоматична для збереження пропорцій */
-    display: block; /* Встановлення блочного відображення для зображень */
-    margin: 0 auto; /* Центрування зображень */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .bottom-panel {
