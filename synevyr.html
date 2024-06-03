@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesamovyte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/synevyr.css">
+</head>
+    <header>
+        <img src="images/Clip path group.png" alt="Логотип">
+        <div class="buttons-container">
+            <button id="aboutButton" class="nav-button" data-page="about">Про нас</button>
+            <button id="excursionsButton" class="nav-button" data-page="excursions">Екскурсії</button>
+            <button id="mountainsButton" class="nav-button" data-page="mountains">Похід у гори</button>
+            <button id="reviewsButton" class="nav-button" data-page="reviews">Відгуки</button>
+        </div>
+    </header>
+        <div class="full-page">
+            <img src="images/synevyr (2).jpg">
+            <div class="translucent-overlay"></div>
+            <div class="overlay-text1">Тип: автобусна екскурсія</div>
+            <div class="overlay-text2">Дати: Щоденно</div>
+            <div class="overlay-text3">Тривалість:  07:00—21:00</div>
+            <div class="overlay-text4">Протяжність: 280 км</div>
+            <div class="overlay-text5">Ціна: 1300 грн</div>
+            <img src="images/rostyslav-savchyn-4nAh6u7dD1g-unsplash 1.png">
+        </div> 
+        <button id="bookButton" class="nav-button1">
+            <img src="images/Group 7.png" alt="Логотип для бронювання">
+        </button>
+        <div class="photo">
+            <img src="images/goverla_1.png" alt="Опис зображення 1">
+        </div>
+        <div class="text1">Озеро СИНЕВИР</div>
+        <div class="text2">Серед 32 озер,що розташовані на Закарпатті,  найчарівнішим вважається Синевир, яке одночасно є однією з візитівок Карпат. Воно утворилось близько 10 тисяч років тому внаслідок зсувів,що перекрили  річкову долину. Середня глибина озера – 8-10 м, водна площа становить 4-5 га.Згідно легенди, озеро Синевир утворилося на місці, де виплакала безліч  сліз графська донька Синь через загибель свого коханого Вира.
+            Труфанець (36 м) – один з найвищих водоспадів каскадного типу в українських Карпатах.
+        </div>
+        <div class="text3">Місце зустрічі:</div>
+        <div class="text4">з м. Яремче, с. Микуличин, с.Татарів, с. Яблуниця, с.Поляниця, смт. Ворохта</div>
+        <div class="text5">Харчування:</div>
+        <div class="text6">є можливість замовити обід в колибі</div>
+        <div class="text7">Ціна:</div>
+        <div class="text8">1300 грн*:</div>
+        <div class="text9"><span class="bullet">·</span>10% знижка: студентам, пенсіонерам, учасникам АТО;</div>
+        <div class="text10"><span class="bullet">·</span>50% знижка: дітям до 14 років;</div>
+        <div class="text11"><span class="bullet">·</span>діти до 6 років – безкоштовно без надання окремого місця.</div>
+        <div class="text12">У вартість включено:</div>
+        <div class="text13">- транспортно-екскурсійний супровід</div>
+        <div class="text15">У вартість не включено:</div>
+        <div class="text16">- вхідні квитки, рекреаційний збір.</div>
+        <div class="text17">~Коротка інфорація~</div>
+        <div class="text18">~Важливо~</div>
+        <div class="text19">Рекомендовано мати з собою:</div>
+        <div class="text23"><span class="bullet">·</span>міцне спортивне взуття;</div>
+        <div class="text24"><span class="bullet">·</span>теплий одяг по погоді(в горах);</div>
+        <div class="text25"><span class="bullet">·</span>головний убір;</div>
+        <div class="text26"><span class="bullet">·</span>сонцезахисні окуляри та крем від засмаги;</div>
+        <div class="text27"><span class="bullet">·</span>зміний одяг та взуття;</div>
+        <div class="text28"><span class="bullet">·</span>дощовик.</div>
+        <div class="text29">Безпека:</div>
+        <div class="text30">групу супроводжує кваліфікований інструктор, який може надати першу допомогу у випадку травмування.</div>
+    <div class="bottom-panel">
+        <div class="bottom-left">
+            <p>Усі права застережено. <br> Публікація матеріалів <br>розміщених на сайті <br> допускається лише за<br> погодженням.</p>
+        </div>
+        <div class="bottom-right">
+            <p>По питанням екскурсії, <br> співпраці та нашої роботи <br>
+            kavktravel@gmail.com <br>
+            + 38 (099) 089 53 18 <br>
+            + 38 (093) 042 67 36</p>
+        </div>
+    </div>
+</div>
+
+    <script>
+        const buttons = document.querySelectorAll('.nav-button');
+        function navigateToPage(event) {
+            const page = event.target.getAttribute('data-page'); 
+            window.location.href = `${page}.html`;
+        }
+        buttons.forEach(button => button.addEventListener('click', navigateToPage));
+        function setActiveButton() {
+            const currentPageUrl = window.location.href; 
+            buttons.forEach(button => {
+                const buttonPageUrl = button.getAttribute('data-page') + '.html';
+                if (currentPageUrl.includes(buttonPageUrl)) {
+                    button.classList.add('active'); 
+                }
+            });
+        }
+        let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+            slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        // Викликаємо функцію при завантаженні сторінки
+        window.addEventListener('load', setActiveButton);
+    </script>
+</body>
+</html>
+
