@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/*Лого*/
 header {
     position: fixed;
     top: 0;
@@ -27,6 +28,7 @@ header img {
     margin-left: 2.85%;
 }
 
+/*Стилі для кнопків ПРО НАС, ПОХОДИ В ГОРИ, ЕКСКУРСІЇ, ВІДГУКИ*/
 .buttons-container {
     flex-grow: 1; 
     text-align: center;
@@ -59,6 +61,7 @@ header button:hover {
     border-bottom: 0.2em solid rgba(79, 149, 72, 1); 
 }
 
+/*Стилі для нижньої панелі*/
 .bottom-panel {
     position: relative;
     width: 100%;
@@ -104,6 +107,7 @@ header button:hover {
     margin-top: 0;
 }
 
+/*Фон на сторінці*/
 .full-page {
     position: relative; 
 }
@@ -115,6 +119,14 @@ header button:hover {
     margin: 0;
     padding: 0;
     border: none; 
+}
+
+.bottom-panel {
+    margin-top: 0%;
+}
+
+ .full-page img{
+    position: relative;
 }
 
 .text {
@@ -130,7 +142,6 @@ header button:hover {
     z-index: 1;
 }
 
-
 @font-face {
     font-family: 'NAMU-1400';
     src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
@@ -138,7 +149,6 @@ header button:hover {
     font-weight: normal;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'NAMU-1990';
@@ -148,14 +158,7 @@ header button:hover {
     font-style: normal;
 }
 
-.bottom-panel {
-    margin-top: 0%;
-}
-
- .full-page img{
-    position: relative;
-}
-
+/*Чорно-прозорий фон, на якому розташований текст "Тип: Автобусна поїздка..."*/
 .black {
     width: 27%; /* розмір квадрата */
     height: 21vw; /* розмір квадрата */
@@ -168,6 +171,7 @@ header button:hover {
     z-index: 1000; /* щоб квадрат був над іншими елементами */
 }
 
+/*Стилі для тексту "Тип: Автобусна поїздка..."*/
 .black-text {
     font-family: 'Montserrat', sans-serif;
     z-index: 10;
@@ -181,6 +185,7 @@ header button:hover {
     left: 11%; 
 }
 
+/*Стилі дял кнопки ЗАБРОНЮВАТИ*/
 .nav-button1 {
     position: absolute;
     top: 44vw;
@@ -198,6 +203,7 @@ header button:hover {
     height: auto;
 }
 
+/*Це наймолодший водограй в Українських Карпатах...*/
 .text1 {
 position: absolute;
 font-size: 1.9vw;

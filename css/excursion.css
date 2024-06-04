@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/*Логотип*/
 header {
     position: fixed;
     top: 0;
@@ -27,6 +28,7 @@ header img {
     margin-left: 2.85%;
 }
 
+/*Стилі для кнопків ПРО НАС, ПОХОДИ В ГОРИ, ЕКСКУРСІЇ, ВІДГУКИ*/
 .buttons-container {
     flex-grow: 1; 
     text-align: center;
@@ -59,6 +61,7 @@ header button:hover {
     border-bottom: 0.2em solid rgba(79, 149, 72, 1); 
 }
 
+/*Стилі для нижньої панелі*/
 .bottom-panel {
     position: relative;
     width: 100%;
@@ -108,7 +111,6 @@ header button:hover {
     position: relative; 
 }
 
-
 .full-page img {
     width: 100%;
     height: auto;
@@ -118,6 +120,11 @@ header button:hover {
     border: none; 
 } 
 
+ .full-page img{
+    position: relative;
+}
+  
+/*НАШІ ТУРИ...*/
 .text {
     position: absolute;
     width: 55%;
@@ -175,15 +182,6 @@ header button:hover {
     font-style: normal;
 }
 
-.bottom-panel {
-    margin-top: 0%;
-}
-
- .full-page img{
-    position: relative;
-}
-  
-
  .mountainsphoto {
     position: absolute; /* Залишаємо фото абсолютно в одному місці */
     top: 0; /* Задаємо верхню границю */
@@ -215,6 +213,7 @@ header button:hover {
     width: 12.5vw; /* Встановлюємо ширину нового зображення */
 } 
 
+/*Стилі для тексту "ЖЕНЕЦЬКИЙ ГУК"*/
 .image-text3  {
     position: absolute;
     font-family: 'NAMU-1400', sans-serif;
@@ -252,7 +251,7 @@ header button:hover {
     width: 12.5vw;
 } 
 
-
+/*Стилі для тексту "СИНЕВИР"*/
 .image-text2  {
     position: absolute;
     font-family: 'NAMU-1400', sans-serif;
@@ -292,6 +291,7 @@ header button:hover {
     width: 12.5vw;
 } 
 
+/*Стилі для тексту "ГУЦУЛ ЛЕНД"*/
 .image-text1  {
     position: absolute;
     font-family: 'NAMU-1400', sans-serif;
@@ -302,9 +302,10 @@ header button:hover {
     color: white; /* Колір тексту */
     font-size: 2.1vw; /* Розмір шрифту */
     text-align: center; /* Вирівнювання тексту по центру */
-    z-index: 10; 
+    z-index: 10; /*Щоб текст був на фото, а не під*/ 
 }
 
+/*Стилі для кнопок ДЕТАЛЬНІШЕ на фото*/
 .logo-button3, .logo-button2, .logo-button1{
     position: absolute;
     bottom: 10%;
