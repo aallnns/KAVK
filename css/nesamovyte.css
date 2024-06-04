@@ -8,13 +8,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(232, 232, 232, 0.08);
+    background-color: rgba(232, 232, 232, 0); 
     padding: 1% 0;
     color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+}
+
+header.scrolled {
+    background-color: rgb(232, 232, 232); 
+    transition: background-color 0.5s ease;
 }
 
 header img {
@@ -68,18 +73,18 @@ header button:hover {
 
 .bottom-left {
     position: absolute;
-    bottom: 19%; /* Decrease the bottom value */
+    bottom: 19%; 
     left: 3%;
     text-align: left;
-    margin-top: -10px; /* Increase the negative margin-top value */
+    margin-top: -10px;
 }
 
 .bottom-right {
     position: absolute;
-    bottom: 19%; /* Decrease the bottom value */
+    bottom: 19%;
     right: 3%;
     text-align: left;
-    margin-top: -10px; /* Increase the negative margin-top value */
+    margin-top: -10px;
 }
 
 .bottom-left p, .bottom-right p {
@@ -135,8 +140,8 @@ header button:hover {
 }
 
 .text h2 {
-    margin-top: -1.5vw; /* Зменшено відстань від заголовка до першого абзацу */
-    margin-bottom: -0.5vw; /* Зменшено відстань між заголовком і підзаголовком */
+    margin-top: -1.5vw; 
+    margin-bottom: -0.5vw; 
     font-size: 5vw;
 }
 
@@ -205,8 +210,8 @@ header button:hover {
     left: 11%;
     top: 79vw;
     width: 77vw;
-    height: auto; /* Автоматично регулюємо висоту, щоб зберегти пропорції */
-    display: block; /* Додаємо як блочний елемент, щоб уникнути непотрібних відступів */
+    height: auto;
+    display: block; 
     margin: 0 auto; 
     z-index: 1; 
 }

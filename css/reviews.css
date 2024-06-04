@@ -25,6 +25,11 @@ header {
     z-index: 1000;
 }
 
+header.scrolled {
+    background-color: rgb(232, 232, 232); 
+    transition: background-color 0.5s;
+}
+
 header img {
     width: 3.85%;
     margin-left: 3.85%;
@@ -77,18 +82,18 @@ header button:hover {
 
 .bottom-left {
     position: absolute;
-    bottom: 19%; /* Decrease the bottom value */
+    bottom: 19%; /* Зменшує нижнє значення */
     left: 3%;
     text-align: left;
-    margin-top: -10px; /* Increase the negative margin-top value */
+    margin-top: -10px; 
 }
 
 .bottom-right {
     position: absolute;
-    bottom: 19%; /* Decrease the bottom value */
+    bottom: 19%;
     right: 3%;
     text-align: left;
-    margin-top: -10px; /* Increase the negative margin-top value */
+    margin-top: -10px; 
 }
 
 .bottom-left p, .bottom-right p {
@@ -124,8 +129,8 @@ header button:hover {
 
 .reviews-text-container {
     position: absolute;
-    top: -50vw; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: -50vw;
+    left: 50%; 
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
@@ -137,12 +142,12 @@ header button:hover {
     color: #181818;
     font-family: 'NAMU-1400', sans-serif;
     font-weight: normal;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .reviews-text2 {
     width: 100%;
-    margin-top: 0.1vw; /* Spacing between text1 and text2 */
+    margin-top: 0.1vw;
     font-size: 2.3vw;
     color: #181818;
     font-family: 'NAMU-1400', sans-serif;
@@ -157,7 +162,7 @@ header button:hover {
     width: 80%; /* ширина */
     height: 50%; /* висота */
     border-radius: 2vw; 
-    background-color: rgba(79, 149, 72, 0.2); /* Semi-transparent green */
+    background-color: rgba(79, 149, 72, 0.2); 
     z-index: 1;
     display: flex;
     align-items: center;
@@ -166,11 +171,11 @@ header button:hover {
 
 .overlay-photo {
     position: absolute;
-    top: -0.1%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
+    top: -0.1%; 
+    left: 50%;
     border-radius: 20px; 
     transform: translateX(-50%);
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
     z-index: 0;
 }
 
@@ -178,7 +183,7 @@ header button:hover {
 .overlay-photo2 {
     position: absolute;
     top: 41vw;
-    max-width: 20%; /* Ensure the image doesn't exceed the specified width */
+    max-width: 20%; 
     z-index: 100;
 }
 
@@ -194,8 +199,8 @@ header button:hover {
 
 .overlay-text-container {
     position: absolute;
-    top: -50vw; /* Center vertically */
-    left: 50%; /* Center horizontally */
+    top: -50vw; 
+    left: 50%; 
     transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
@@ -204,7 +209,7 @@ header button:hover {
 .overlay-text3 {
     position: relative; 
     top: 63vw;
-    left: -31vw; /* Adjust as needed */
+    left: -31vw;
     font-family: 'NAMU-1400', sans-serif;
     font-size: 3.2vw;
     color: rgba(232, 232, 232, 1); 
@@ -214,7 +219,7 @@ header button:hover {
 .overlay-text4 {
     position: relative; 
     top: 62vw;
-    left: -28vw; /* Adjust as needed */
+    left: -28vw; 
     font-family: 'NAMU-1400', sans-serif;
     font-size: 3.2vw;
     color: rgba(232, 232, 232, 1); 
@@ -224,7 +229,7 @@ header button:hover {
 .overlay-text5 {
     position: relative; 
     top: 102.5vw;
-    left: -19.5vw; /* Adjust as needed */
+    left: -19.5vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
     font-size: 2vw;
@@ -235,7 +240,7 @@ header button:hover {
 .overlay-text6 {
     position: relative; 
     top: 100vw;
-    left: 19vw; /* Adjust as needed */
+    left: 19vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
     font-size: 2vw;
@@ -245,7 +250,7 @@ header button:hover {
 .overlay-text7 {
     position: relative; 
     top: 100.5vw;
-    left: -25vw; /* Adjust as needed */
+    left: -25vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
     font-size: 2vw;
@@ -256,7 +261,7 @@ header button:hover {
 .overlay-text8 {
     position: relative; 
     top: 98.3vw;
-    left: -10.5vw; /* Adjust as needed */
+    left: -10.5vw; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
     font-size: 1.5vw;
@@ -278,7 +283,7 @@ header button:hover {
 .overlay-text10 {
     position: relative; 
     top: 93.9vw;
-    left: 28.5vw; /* Adjust as needed */
+    left: 28.5vw; 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
     font-size: 1.5vw;
@@ -309,5 +314,4 @@ header button:hover {
     color: rgba(0, 0, 0, 1);
     z-index: 10;
 }
-
 

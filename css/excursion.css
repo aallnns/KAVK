@@ -17,6 +17,11 @@ header {
     z-index: 1000;
 }
 
+header.scrolled {
+    background-color: rgb(232, 232, 232); /* Change to the color you want when scrolled */
+    transition: background-color 0.5s;
+}
+
 header img {
     width: 4%;
     margin-left: 2.85%;
