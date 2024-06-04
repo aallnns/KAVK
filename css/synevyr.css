@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/*Стилі для логотипу*/
 header {
     position: fixed;
     top: 0;
@@ -22,6 +23,7 @@ header img {
     margin-left: 2.85%;
 }
 
+/*Стилі для кнопків ПРО НАС, ПОХОДИ В ГОРИ, ЕКСКУРСІЇ, ВІДГУКИ*/
 .buttons-container {
     flex-grow: 1; 
     text-align: center;
@@ -54,6 +56,7 @@ header button:hover {
     border-bottom: 0.2em solid rgba(79, 149, 72, 1); 
 }
 
+/*Стилі для нижньої панелі*/
 .bottom-panel {
     position: relative;
     width: 100%;
@@ -96,6 +99,9 @@ header button:hover {
     margin-top: 0;
 }
 
+
+
+/*Фон на сторінці*/
 .full-page {
     position: relative; 
 }
@@ -109,55 +115,9 @@ header button:hover {
     border: none; 
 }
 
-.text {
-    position: absolute;
-    width: 55%;
-    top: 13%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3vw;
-    text-align: center;
-    color: #181818;
-    font-family: 'NAMU-1400', sans-serif;
-    font-weight: normal;
-    z-index: 1;
+.full-page img{
+    position: relative;
 }
-
-.text p:first-child {
-    font-size: 4vw;
-}
-
-.text p:last-child {
-    margin-top: 1vw; 
-    font-size: 2vw;
-}
-
-.text h2 {
-    margin-top: -1.5vw; /* Зменшено відстань від заголовка до першого абзацу */
-    margin-bottom: -0.5vw; /* Зменшено відстань між заголовком і підзаголовком */
-    font-size: 5vw;
-}
-
-.textmountains { 
-    position: absolute;
-    width: 55%;
-    left: 50%;
-    top: 43%;
-    transform: translateX(-50%);
-    font-family: 'NAMU-1400', sans-serif;
-    font-size: 3.7vw;
-    text-align: center;
-    color: rgba(24, 24, 24, 1);
-    z-index: 1;
-    font-weight: normal;
-    
-}
-
-.textmountains p {
-    margin: 0;
-} 
-
-
 @font-face {
     font-family: 'NAMU-1400';
     src: url('../fonts/NAMU-1400.woff2') format('woff2'), /* Для сучасних браузерів */
@@ -172,15 +132,8 @@ header button:hover {
     font-weight: normal;
     font-style: normal;
 }
-
-.bottom-panel {
-    margin-top: 0%;
-}
-
- .full-page img{
-    position: relative;
-}
   
+/*Стилі для кнопки ЗАБРОНЮВАТИ*/
 .nav-button1 {
     position: absolute;
     top: 44vw;
@@ -190,7 +143,6 @@ header button:hover {
     background: none;
     border: none;
     cursor: pointer;
-
 }
 
 .nav-button1 img {
@@ -209,6 +161,7 @@ header button:hover {
     z-index: 1; 
 }
 
+/*Чорно-прозорий фон, на якому розташований текст "Тип: Автобусна поїздка..."*/
 .translucent-overlay {
     position: absolute;
     top: 16.5%; /* верхня позиція */
@@ -220,6 +173,7 @@ header button:hover {
     z-index: 1; /* розташування над зображенням*/
 }
 
+/*Стилі до текстів на чорно-прозорому фоні*/
 .overlay-text1 {
     position: absolute;
     top: 17%;
