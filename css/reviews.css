@@ -173,7 +173,7 @@ header button:hover {
     position: absolute;
     top: -0.1%; 
     left: 50%;
-    border-radius: 20px; 
+    border-radius: 2vw; 
     transform: translateX(-50%);
     width: 50%; 
     z-index: 0;
