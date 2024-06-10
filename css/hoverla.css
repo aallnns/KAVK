@@ -203,14 +203,19 @@ header button:hover {
 .nav-button1 img {
     width: 19vw;
     height: auto;
+    transition: filter 0.2s ease;
 }
 
+/* Підсвічування при наведенні */
+.nav-button1 img:hover {
+    filter: brightness(1.2); 
+}
 
 /* Стилі для панелі реєстрації */
 .registration-panel {
     display: none; /* Спочатку приховано */
     position: absolute;
-    top: 29vw;
+    top: 22vw;
     right: 31%;
     width: 36%;
     font-family: 'Montserrat', sans-serif;
