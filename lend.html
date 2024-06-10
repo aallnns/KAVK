@@ -32,6 +32,22 @@
             <img src="images/Group 7.png" alt="Логотип для бронювання">
         </button>
 
+        <div id="registrationPanel" class="registration-panel">
+            <form>
+                <h2>Форма бронювання</h2>
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="name">Прізвище та ім'я:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Електронна адреса:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <button type="submit">Надіслати</button>
+            </form>
+        </div>
+        <div id="overlay" class="overlay"></div>
+
         <div class="photo">
             <img src="images/goverla_1.png" alt="Опис зображення 1">
         </div>
@@ -81,6 +97,18 @@
     </div>
 </div>
 <script>
+    // відповідає за появу панелі ФОРМА БРОНЮВАННЯ і затемнення з аднього фону
+document.getElementById('bookButton').addEventListener('click', function() {
+    var panel = document.getElementById('registrationPanel');
+    var overlay = document.getElementById('overlay');
+    if (panel.style.display === 'none' || panel.style.display === '') {
+        panel.style.display = 'block';
+        overlay.style.display = 'block';
+    } else {
+        panel.style.display = 'none';
+        overlay.style.display = 'none';
+    }
+});
     // відповідає за зміну панелі при прокручувані
     window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
