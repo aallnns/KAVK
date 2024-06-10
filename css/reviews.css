@@ -147,7 +147,7 @@ header button:hover {
 
 .reviews-text2 {
     width: 100%;
-    margin-top: 0.1vw;
+    margin-top: 0.4vw;
     font-size: 2.3vw;
     color: #181818;
     font-family: 'NAMU-1400', sans-serif;
@@ -179,23 +179,53 @@ header button:hover {
     z-index: 0;
 }
 
-.overlay-photo1,
-.overlay-photo2 {
+.overlay-photo1, 
+.overlay-photo2,
+.overlay-photo3,
+.overlay-photo4,
+.overlay-photo5,
+.overlay-photo6 {
     position: absolute;
-    top: 41vw;
-    max-width: 20%; 
+    top: 36.5vw;
+    max-width: 4%; 
+    max-height: 4%;
     z-index: 100;
 }
 
 .overlay-photo1 {
-    left: 20vw;
+    left: 8vw;
     transform: translate(-50%, -50%);
 }
 
 .overlay-photo2 {
-    left: 58vw;
+    left: 47vw;
     transform: translate(-50%, -50%);
 }
+
+.overlay-photo3 {
+    top: 53.5vw;
+    left: 8vw;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-photo4 {
+    top: 53.5vw;
+    left: 47vw;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-photo5 {
+    top: 70.5vw;
+    left: 8vw;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-photo6 {
+    top: 70.5vw;
+    left: 47vw;
+    transform: translate(-50%, -50%);
+}
+
 
 .overlay-text-container {
     position: absolute;
@@ -208,7 +238,7 @@ header button:hover {
 
 .overlay-text3 {
     position: relative; 
-    top: 63vw;
+    top: 61vw;
     left: -31vw;
     font-family: 'NAMU-1400', sans-serif;
     font-size: 3.2vw;
@@ -218,7 +248,7 @@ header button:hover {
 
 .overlay-text4 {
     position: relative; 
-    top: 62vw;
+    top: 61.1vw;
     left: -28vw; 
     font-family: 'NAMU-1400', sans-serif;
     font-size: 3.2vw;
@@ -228,90 +258,278 @@ header button:hover {
 
 .overlay-text5 {
     position: relative; 
-    top: 102.5vw;
-    left: -19.5vw;
+    top: 86.5vw;
+    left: -26vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
-    font-size: 2vw;
+    font-size: 1.3vw;
     color: rgba(0, 0, 0, 1); 
     z-index: 10;
 }
 
 .overlay-text6 {
-    position: relative; 
-    top: 100vw;
-    left: 19vw;
+    position: absolute;
+    top: 98vw;
+    left: -25vw;
+    width: 25vw;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600; 
-    font-size: 2vw;
-    color: rgba(0, 0, 0, 1); 
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 1);
     z-index: 10;
 }
+
 .overlay-text7 {
-    position: relative; 
-    top: 100.5vw;
-    left: -25vw;
+    position: absolute;
+    top: 93.5vw;
+    left: -5vw;
+    width: 25vw;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600; 
-    font-size: 2vw;
-    color: rgba(0, 0, 0, 1); 
+    font-size: 1vw;
+    color: rgba(132, 132, 132, 0.765);
     z-index: 10;
 }
 
 .overlay-text8 {
     position: relative; 
-    top: 98.3vw;
-    left: -10.5vw; 
+    top: 85vw;
+    left: 16vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
-    font-size: 1.5vw;
-    color: rgba(0, 0, 0, 0.409); 
-    z-index: 10;
-}
-
-.overlay-text9 {
-    position: relative; 
-    top: 96vw;
-    left: 14vw; 
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600; 
-    font-size: 2vw;
+    font-size: 1.3vw;
     color: rgba(0, 0, 0, 1); 
     z-index: 10;
 }
 
-.overlay-text10 {
-    position: relative; 
-    top: 93.9vw;
-    left: 28.5vw; 
+.overlay-text9 {
+    position: absolute;
+    top: 98vw;
+    left: 14vw;
+    width: 25vw;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600; 
-    font-size: 1.5vw;
-    color: rgba(0, 0, 0, 0.409); 
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+.overlay-text10 {
+    position: absolute;
+    top: 93.5vw;
+    left: 33.5vw;
+    width: 20vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: rgba(132, 132, 132, 0.765);
     z-index: 10;
 }
 
 .overlay-text11 {
-    position: absolute;
-    top: 117vw;
-    left: -23vw;
-    width: 23vw;
-    text-align: left;
+    position: relative; 
+    top: 100.5vw;
+    left: -25vw;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
-    color: rgba(0, 0, 0, 1);
+    font-weight: 600; 
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 1); 
     z-index: 10;
 }
 
 .overlay-text12 {
     position: absolute;
-    top: 117vw;
-    left: 17vw;
-    width: 24vw;
+    top: 115vw;
+    left: -25vw;
+    width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5vw;
+    font-size: 0.8vw;
     color: rgba(0, 0, 0, 1);
     z-index: 10;
 }
 
+.overlay-text13 {
+    position: absolute;
+    top: 110.5vw;
+    left: -5vw;
+    width: 25vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: rgba(132, 132, 132, 0.765);
+    z-index: 10;
+}
+
+.overlay-text14 {
+    position: relative; 
+    top: 99vw;
+    left: 13.5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 1); 
+    z-index: 10;
+}
+
+.overlay-text15 {
+    position: absolute;
+    top: 115vw;
+    left: 14vw;
+    width: 25vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+.overlay-text16 {
+    position: absolute;
+    top: 110.5vw;
+    left: 33.5vw;
+    width: 20vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: rgba(132, 132, 132, 0.765);
+    z-index: 10;
+}
+
+.overlay-text17 {
+    position: relative; 
+    top: 114.5vw;
+    left: -25vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 1); 
+    z-index: 10;
+}
+
+.overlay-text18 {
+    position: absolute;
+    top: 132vw;
+    left: -25vw;
+    width: 25vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+.overlay-text19 {
+    position: absolute;
+    top: 127.5vw;
+    left: -5vw;
+    width: 25vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: rgba(132, 132, 132, 0.765);
+    z-index: 10;
+}
+
+
+.overlay-text20 {
+    position: relative; 
+    top: 112.7vw;
+    left: 16vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600; 
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, 1); 
+    z-index: 10;
+}
+
+.overlay-text21 {
+    position: absolute;
+    top: 132vw;
+    left: 14vw;
+    width: 25vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8vw;
+    color: rgba(0, 0, 0, 1);
+    z-index: 10;
+}
+
+.overlay-text22 {
+    position: absolute;
+    top: 127.5vw;
+    left: 33.5vw;
+    width: 20vw;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: rgba(132, 132, 132, 0.765);
+    z-index: 10;
+}
+
+.translucent-overlay2 {
+    position: absolute;
+    top: 40%; 
+    left: 7%; 
+    width: 37%; 
+    height: 16%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 1vw;  
+    z-index: 1; 
+}
+
+.translucent-overlay3 {
+    position: absolute;
+    top: 60%; 
+    left: 7%;
+    width: 37%; 
+    height: 16%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 1vw;  
+    z-index: 1; 
+}
+
+
+.translucent-overlay4 {
+    position: absolute;
+    top: 80%; 
+    left: 7%; 
+    width: 37%; 
+    height: 16%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 1vw;  
+    z-index: 1; 
+}
+
+.translucent-overlay5 {
+    position: absolute;
+    top: 40%;
+    left: 56%; 
+    width: 37%; 
+    height: 16%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 1vw;  
+    z-index: 1; 
+}
+
+.translucent-overlay6 {
+    position: absolute;
+    top: 60%; 
+    left: 56%; 
+    width: 37%; 
+    height: 16%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 1vw;  
+    z-index: 1; 
+}
+
+.translucent-overlay7 {
+    position: absolute;
+    top: 80%;
+    left: 56%;
+    width: 37%;
+    height: 16%; 
+    background-color: rgb(255, 255, 255); 
+    border-radius: 1vw;  
+    z-index: 1; 
+}
