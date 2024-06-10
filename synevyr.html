@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nesamovyte</title>
+    <title>Synevir</title>
+    <link rel="icon" href="images/Group 2 (2).png" sizes="32x32" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/synevyr.css">
@@ -105,6 +106,13 @@ document.getElementById('bookButton').addEventListener('click', function() {
         overlay.style.display = 'none';
     }
 });
+
+        // закриває панель при натисканні на overlay
+        document.getElementById('overlay').addEventListener('click', function() {
+            document.getElementById('registrationPanel').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        });
+
     // відповідає за зміну панелі при прокручувані
     window.addEventListener('scroll', function() {
     const header = document.querySelector('header');

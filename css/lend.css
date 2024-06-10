@@ -164,7 +164,7 @@ header button:hover {
 .registration-panel {
     display: none; /* Спочатку приховано */
     position: absolute;
-    top: 29vw;
+    top: 22vw;
     right: 31%;
     width: 36%;
     font-family: 'Montserrat', sans-serif;
