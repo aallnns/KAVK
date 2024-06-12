@@ -175,7 +175,8 @@ header button:hover {
     left: 50%;
     border-radius: 2vw; 
     transform: translateX(-50%);
-    width: 50%; 
+    max-width: 100%; 
+    max-height: 37%;
     z-index: 0;
 }
 
@@ -236,29 +237,19 @@ header button:hover {
     text-align: center;
 }
 
-.overlay-text3 {
-    position: relative; 
-    top: 61vw;
-    left: -31vw;
-    font-family: 'NAMU-1400', sans-serif;
-    font-size: 3.2vw;
-    color: rgba(232, 232, 232, 1); 
-    z-index: 10;
-}
-
 .overlay-text4 {
     position: relative; 
-    top: 61.1vw;
-    left: -28vw; 
+    top: 59vw;
+    left: 16vw; 
     font-family: 'NAMU-1400', sans-serif;
-    font-size: 3.2vw;
-    color: rgba(232, 232, 232, 1); 
+    font-size: 2.5vw;
+    color: rgb(0, 0, 0); 
     z-index: 10;
 }
 
 .overlay-text5 {
     position: relative; 
-    top: 86.5vw;
+    top: 88.7vw;
     left: -26vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
@@ -269,8 +260,8 @@ header button:hover {
 
 .overlay-text6 {
     position: absolute;
-    top: 98vw;
-    left: -25vw;
+    top: 95vw;
+    left: -17vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -281,8 +272,8 @@ header button:hover {
 
 .overlay-text7 {
     position: absolute;
-    top: 93.5vw;
-    left: -5vw;
+    top: 91vw;
+    left: 2vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -293,7 +284,7 @@ header button:hover {
 
 .overlay-text8 {
     position: relative; 
-    top: 85vw;
+    top: 87.2vw;
     left: 16vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
@@ -304,8 +295,8 @@ header button:hover {
 
 .overlay-text9 {
     position: absolute;
-    top: 98vw;
-    left: 14vw;
+    top: 95vw;
+    left: 22vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -316,8 +307,8 @@ header button:hover {
 
 .overlay-text10 {
     position: absolute;
-    top: 93.5vw;
-    left: 33.5vw;
+    top: 91vw;
+    left: 40.5vw;
     width: 20vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -328,7 +319,7 @@ header button:hover {
 
 .overlay-text11 {
     position: relative; 
-    top: 100.5vw;
+    top: 102.5vw;
     left: -25vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
@@ -339,8 +330,8 @@ header button:hover {
 
 .overlay-text12 {
     position: absolute;
-    top: 115vw;
-    left: -25vw;
+    top: 112vw;
+    left: -17vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -351,8 +342,8 @@ header button:hover {
 
 .overlay-text13 {
     position: absolute;
-    top: 110.5vw;
-    left: -5vw;
+    top: 108vw;
+    left: 2vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -363,7 +354,7 @@ header button:hover {
 
 .overlay-text14 {
     position: relative; 
-    top: 99vw;
+    top: 101vw;
     left: 13.5vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
@@ -374,8 +365,8 @@ header button:hover {
 
 .overlay-text15 {
     position: absolute;
-    top: 115vw;
-    left: 14vw;
+    top: 112vw;
+    left: 22vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -386,8 +377,8 @@ header button:hover {
 
 .overlay-text16 {
     position: absolute;
-    top: 110.5vw;
-    left: 33.5vw;
+    top: 108vw;
+    left: 40.5vw;
     width: 20vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -398,7 +389,7 @@ header button:hover {
 
 .overlay-text17 {
     position: relative; 
-    top: 114.5vw;
+    top: 116.5vw;
     left: -25vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
@@ -409,8 +400,8 @@ header button:hover {
 
 .overlay-text18 {
     position: absolute;
-    top: 132vw;
-    left: -25vw;
+    top: 129vw;
+    left: -17vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -421,8 +412,8 @@ header button:hover {
 
 .overlay-text19 {
     position: absolute;
-    top: 127.5vw;
-    left: -5vw;
+    top: 125vw;
+    left: 2vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -434,8 +425,8 @@ header button:hover {
 
 .overlay-text20 {
     position: relative; 
-    top: 112.7vw;
-    left: 16vw;
+    top: 115vw;
+    left: 15vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600; 
     font-size: 1.3vw;
@@ -445,8 +436,8 @@ header button:hover {
 
 .overlay-text21 {
     position: absolute;
-    top: 132vw;
-    left: 14vw;
+    top: 129vw;
+    left: 22vw;
     width: 25vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -457,8 +448,8 @@ header button:hover {
 
 .overlay-text22 {
     position: absolute;
-    top: 127.5vw;
-    left: 33.5vw;
+    top: 125vw;
+    left: 40.5vw;
     width: 20vw;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
