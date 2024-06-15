@@ -12,7 +12,7 @@
     <header>
         <img src="images/Clip path group.png" alt="Логотип">
         <div class="buttons-container">
-            <button id="aboutButton" class="nav-button" data-page="about">Про нас</button>
+            <button id="index" class="nav-button" data-page="index">Про нас</button>
             <button id="excursionsButton" class="nav-button" data-page="excursions">Екскурсії</button>
             <button id="mountainsButton" class="nav-button" data-page="mountains">Похід у гори</button>
             <button id="reviewsButton" class="nav-button" data-page="reviews">Відгуки</button>
@@ -93,7 +93,7 @@
         </div>
     </div>
     <script>
-        // відповідає за появу панелі ФОРМА БРОНЮВАННЯ і затемнення з аднього фону
+        // відповідає за появу панелі ФОРМА БРОНЮВАННЯ і затемнення заднього фону
 document.getElementById('bookButton').addEventListener('click', function() {
     var panel = document.getElementById('registrationPanel');
     var overlay = document.getElementById('overlay');
@@ -105,23 +105,11 @@ document.getElementById('bookButton').addEventListener('click', function() {
         overlay.style.display = 'none';
     }
 });
-
         // закриває панель при натисканні на overlay
         document.getElementById('overlay').addEventListener('click', function() {
             document.getElementById('registrationPanel').style.display = 'none';
             document.getElementById('overlay').style.display = 'none';
         });
-
-        // відповідає за зміну панелі при прокручуванні
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) { 
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
         // відповідає за зміну панелі при прокручувані
     window.addEventListener('scroll', function() {
     const header = document.querySelector('header');
